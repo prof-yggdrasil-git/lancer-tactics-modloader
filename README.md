@@ -1,20 +1,22 @@
 # Lancer Tactics Modloader
-A mod loader for [Lancer Tactics](https://wick.itch.io/lancer-tactics), compatible with versions v0.5.0 - v0.5.2.
+A mod loader for [Lancer Tactics](https://wick.itch.io/lancer-tactics), compatible with version v0.6.0.
 
 *(Older modloader versions for v0.4.7+ can be found in the* `/old/` *directory)*
 
 ## Installation
-- Download [modloader.zip](https://github.com/GavstarB/lancer-tactics-modloader/blob/main/modloader-v0.5.0-0.5.2.zip) and extract the `modloader` folder.
-- Place the `modloader` folder in the same directory as your game executable (i.e. `LancerTactics.exe` on Windows).
-- Run the Lancer Tactics executable with the parameters `--script modloader/modloader.gd`. I recommend doing this from a terminal so you can verify if the modloader and mods have loaded correctly. You should see `[Modloader Enabled]` and mod installation information in the terminal output. Ensure that your working directory is the same as the executable directory (i.e. if your executable is at `/path/to/LancerTactics.exe`, you may need to run `cd /path/to/` before running the command if you did not start the terminal in that directory).
+- Download [modloader.zip](https://github.com/GavstarB/lancer-tactics-modloader/blob/main/modloader-v0.6.0.zip) and extract the `modloader` folder.
+- Place the `modloader` folder and `override.cfg` file in the same directory as your game executable (i.e. `LancerTactics.exe` on Windows).
+- Run the Lancer Tactics executable.
 
-Users on MacOS will instead need to place the `modloader` folder in their game data directory (found at _Settings_ -> _Data_ in the game's menu) and start the game with the command `open -F -W Lancer\ Tactics.app --args --script /path/to/modloader/modloader.gd`, replacing `/path/to/` with the path to their game data directory.
+*(To disable the modloader, rename or remove the* `override.cfg` *file)*
+
+**Due to Godot's removal of the** `--script` **parameter, users on MacOS are currently unable to use the modloader.**
 
 ## Where can I find Mods?
 - Mods made by **GavstarB** (me) can be found [here](https://github.com/GavstarB/lancer-tactics-mods).
 
 ## How it works
-- `--script modloader/modloader.gd` runs some gdscript in the game's context. It uses this script to patch the `modloader/modloader.pck` file into the game. It then switches scene to a scene loaded from that file.
+- `override.cfg` loads the `modloader/modloader.gd` script and runs it in the game's context. It uses this script to patch the `modloader/modloader.pck` file into the game. It then switches scene to a scene loaded from that file.
 - In the modloader scene, it then runs the code for detecting and loading mods and texture packs. A loaded .pck can only add or replace game resources outright, so each mod and texture pack contains a `mod.json` or `textures.json` file, which tells the modloader which of the game's resources it needs to add references to so it can load the new content. Otherwise, the same resource file would need to be replaced over and over to add each mod's references, leaving only the version with references to the last loaded mod's resources and breaking all the other mods.
 - Once all modded content is loaded, it switches scene to the game's default scene.
 

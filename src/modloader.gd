@@ -55,7 +55,7 @@ func _init() -> void:
     
     var tp_path = OS.get_executable_path().get_base_dir().path_join("modloader").path_join("texturepacks")
     if OS.has_feature("editor"):
-        tp_path = "/home/gavstarb/Games/Lancer Tactics/modloader/texturepacks"
+        tp_path = "/home/gavstarb/Games/Lancer Tactics/0.4.7/modloader/texturepacks"
     var files = DirAccess.get_files_at(tp_path)
     
     if(len(files) > 0):
@@ -273,7 +273,17 @@ func load_texture_pack(pack_path: String) -> bool:
                     else:
                         print("  - Failed to add texture ", value, " to ", key)
                 print("  - Added ", count, " textures to ", key)
-            
+        
+        if(json.has("translate")):
+            for key in json["translate"].keys():
+                var translation = Translation.new()
+                translation.locale = key
+                var keys = json["translate"][key].keys()
+                for key2 in keys:
+                    translation.add_message(key2, json["translate"][key][key2])
+                TranslationServer.add_translation(translation)
+                print("  - Added ", len(keys), " translations for locale '", key, "'")
+        
         #delete_dir_recursive(extract_path)
         return true
     
