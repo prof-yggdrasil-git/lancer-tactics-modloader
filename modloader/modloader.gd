@@ -20,7 +20,7 @@ func modded_start(scene_tree: SceneTree) -> void:
     var pack_path = cwd.path_join("modloader").path_join("modloader.pck")
     #if OS.has_feature("macos"):
     #    pack_path = pack_path.replace("Lancer Tactics.app/Contents/MacOS/", "")
-    var success = ProjectSettings.load_resource_pack(pack_path)
+    var success = ProjectSettings.load_resource_pack(pack_path, true)
     #var success = ProjectSettings.load_resource_pack("/home/gavstarb/Programming/Godot/Projects/Lancer Tactics - Modded/modloader.pck")
     #var success = true
     
