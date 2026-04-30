@@ -1,6 +1,6 @@
 # Lancer Tactics Modloader
 A mod loader for [Lancer Tactics](https://wick.itch.io/lancer-tactics), compatible with version v0.6.0.
--i'm doing hacky updates for 0.7.1, still iterating right now
+- i'm doing hacky updates for 0.7.1, still iterating right now
 
 *(Older modloader versions for v0.4.7+ can be found in the* `/old/` *directory)*
 
