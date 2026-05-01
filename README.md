@@ -17,8 +17,7 @@ A mod loader for [Lancer Tactics](https://wick.itch.io/lancer-tactics), compatib
 
 ## Where can I find Mods?
 - Mods made by **GavstarB** (me) can be found [here](https://github.com/GavstarB/lancer-tactics-mods).
-- Compatible versions for 0.7.1 will be included in this codebase for ease of use
-
+- Compatible versions for 0.7.1 are available in a [fork](https://github.com/prof-yggdrasil-git/lancer-tactics-mods).
 ## How it works
 - `override.cfg` loads the `modloader/modloader.gd` script and runs it in the game's context. It uses this script to patch the `modloader/modloader.pck` file into the game. It then switches scene to a scene loaded from that file.
 - In the modloader scene, it then runs the code for detecting and loading mods and texture packs. A loaded .pck can only add or replace game resources outright, so each mod and texture pack contains a `mod.json` or `textures.json` file, which tells the modloader which of the game's resources it needs to add references to so it can load the new content. Otherwise, the same resource file would need to be replaced over and over to add each mod's references, leaving only the version with references to the last loaded mod's resources and breaking all the other mods.
