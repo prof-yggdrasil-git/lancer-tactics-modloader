@@ -1,13 +1,14 @@
 # Lancer Tactics Modloader
-A mod loader for [Lancer Tactics](https://wick.itch.io/lancer-tactics), compatible with version v0.6.0.
-- i'm doing hacky updates for 0.7.1, still iterating right now
+A mod loader for [Lancer Tactics](https://wick.itch.io/lancer-tactics), compatible with version v0.7.1.
+- i'm doing hacky updates for 0.7.1, all credit to GavstarB for building the base code
 - i recommend using a second copy of the game folder entirely, and keeping an original copy of any pilots you update to use modded licenses/frames/weapons/core bonuses
 
 *(Older modloader versions for v0.4.7+ can be found in the* `/old/` *directory)*
 
 ## Installation
-- Download [modloader.zip](https://github.com/GavstarB/lancer-tactics-modloader/blob/main/modloader-v0.6.0.zip) and extract the `modloader` folder.
-- Place the `modloader` folder and `override.cfg` file in the same directory as your game executable (i.e. `LancerTactics.exe` on Windows).
+- Click the green code button and download zip.
+- Unzip into the game folder.
+- Make sure the `modloader` folder and `override.cfg` file are in the same directory as your game executable (i.e. `LancerTactics.exe` on Windows).
 - Run the Lancer Tactics executable.
 
 *(To disable the modloader, rename or remove the* `override.cfg` *file)*
@@ -16,6 +17,7 @@ A mod loader for [Lancer Tactics](https://wick.itch.io/lancer-tactics), compatib
 
 ## Where can I find Mods?
 - Mods made by **GavstarB** (me) can be found [here](https://github.com/GavstarB/lancer-tactics-mods).
+- Compatible versions for 0.7.1 will be included in this codebase for ease of use
 
 ## How it works
 - `override.cfg` loads the `modloader/modloader.gd` script and runs it in the game's context. It uses this script to patch the `modloader/modloader.pck` file into the game. It then switches scene to a scene loaded from that file.
