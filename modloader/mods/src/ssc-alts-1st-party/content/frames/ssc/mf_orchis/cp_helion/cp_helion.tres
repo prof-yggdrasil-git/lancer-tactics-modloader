@@ -1,0 +1,14 @@
+[gd_resource type="Resource" script_class="Kit" load_steps=7 format=3]
+
+[ext_resource type="Script" path="res://engine/character/gear_action/action.gd" id="1_th2w3"]
+[ext_resource type="Script" path="res://engine/character/gear_passive/passive.gd" id="2_73rae"]
+[ext_resource type="Resource" path="res://content/frames/ssc/mf_orchis/cp_helion/action_hunting_eagle.tres" id="2_bng4y"]
+[ext_resource type="Resource" path="res://content/frames/ssc/mf_orchis/cp_helion/action_helion.tres" id="2_twxw5"]
+[ext_resource type="Script" path="res://engine/character/gear/kit.gd" id="3_bng4y"]
+[ext_resource type="Resource" path="res://content/frames/ssc/mf_orchis/cp_helion/action_regain_cp.tres" id="4_xki7y"]
+
+[resource]
+script = ExtResource("3_bng4y")
+actions = Array[ExtResource("1_th2w3")]([ExtResource("2_twxw5"), ExtResource("2_bng4y"), ExtResource("4_xki7y")])
+is_trait = true
+metadata/_custom_type_script = "uid://ckrv6mvs5q65e"

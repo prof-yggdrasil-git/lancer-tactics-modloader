@@ -1,0 +1,12 @@
+[gd_resource type="Resource" load_steps=3 format=3]
+
+[ext_resource type="Script" path="res://content/frames/ssc/mf_swallowtail_ranger/mt_invigorating_scanners/action_invigorating_scanners.gd" id="1_63sc0"]
+[ext_resource type="Texture2D" path="res://assets/icons/modded/ssc-alts-1st-party/mt_invigorating_scanners.png" id="1_v056q"]
+
+[resource]
+script = ExtResource("1_63sc0")
+triggers_on = Array[int]([20])
+trigger_timing = 0
+consumes_rxn = false
+icon_override = ExtResource("1_v056q")
+metadata/_custom_type_script = "uid://crqxmv8pxyk6g"

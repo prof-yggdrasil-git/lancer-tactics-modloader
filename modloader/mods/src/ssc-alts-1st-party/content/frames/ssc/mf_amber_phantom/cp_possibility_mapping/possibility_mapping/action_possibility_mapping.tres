@@ -1,0 +1,11 @@
+[gd_resource type="Resource" load_steps=3 format=3]
+
+[ext_resource type="Texture2D" path="res://assets/icons/modded/ssc-alts-1st-party/action_possibility_mapping.png" id="1_72cvu"]
+[ext_resource type="Script" path="res://content/frames/ssc/mf_amber_phantom/cp_possibility_mapping/possibility_mapping/action_possibility_mapping.gd" id="2_nmpcq"]
+
+[resource]
+script = ExtResource("2_nmpcq")
+triggers_on = Array[int]([9])
+consumes_rxn = false
+icon_override = ExtResource("1_72cvu")
+metadata/_custom_type_script = "uid://crqxmv8pxyk6g"

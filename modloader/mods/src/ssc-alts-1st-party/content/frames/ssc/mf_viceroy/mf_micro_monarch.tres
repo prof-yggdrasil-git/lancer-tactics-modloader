@@ -1,0 +1,39 @@
+[gd_resource type="Resource" script_class="Frame" load_steps=10 format=3]
+
+[ext_resource type="Script" path="res://engine/character/gear/kit.gd" id="1_6v8dk"]
+[ext_resource type="Script" path="res://engine/character/unit_core/frame.gd" id="2_ijic7"]
+[ext_resource type="Texture2D" path="res://assets/units/pc/ssc_viceroy.png" id="3_tbxpu"]
+[ext_resource type="Script" path="res://engine/character/unit/statblock.gd" id="4_jdm8n"]
+[ext_resource type="Resource" path="res://content/frames/ssc/mf_viceroy/cp_tengu_assisted_missile_tubes/cp_tengu_assisted_missile_tubes.tres" id="5_tbxpu"]
+[ext_resource type="Resource" path="res://content/frames/ssc/mf_viceroy/mt_near_threat_targeting_processor/mt_near_threat_targeting_processor.tres" id="6_ll38s"]
+[ext_resource type="Resource" path="res://content/frames/ssc/mf_viceroy/mt_vigilante_omnidirectional_launchers/mt_vigilante_omnidirectional_launchers.tres" id="7_j0m77"]
+[ext_resource type="Resource" path="res://content/frames/ssc/mf_viceroy/mt_pressure_plating_viceroy.tres" id="8_jsl53"]
+
+[sub_resource type="Resource" id="Resource_eh1uv"]
+script = ExtResource("4_jdm8n")
+size = 1
+structure = 4
+stress = 4
+health = 8
+armor = 1
+evasion = 8
+edef = 8
+speed = 5
+heat = 6
+save_target = 11
+sensor_range = 10
+tech_attack = 1
+repairs = 4
+systems_points = 5
+reactions = 1
+activations = 1
+metadata/_custom_type_script = "uid://bxpc46igtsmvw"
+
+[resource]
+script = ExtResource("2_ijic7")
+sprites = Array[Texture2D]([ExtResource("3_tbxpu")])
+traits = Array[ExtResource("1_6v8dk")]([ExtResource("5_tbxpu"), ExtResource("6_ll38s"), ExtResource("7_j0m77"), ExtResource("8_jsl53")])
+mount_types = Array[int]([4, 1, 2])
+stat = SubResource("Resource_eh1uv")
+role_primary = 1
+metadata/_custom_type_script = "uid://daycu0mqh1rbq"

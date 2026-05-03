@@ -1,0 +1,13 @@
+[gd_resource type="Resource" load_steps=3 format=3]
+
+[ext_resource type="Texture2D" path="res://assets/icons/modded/mhi/cp_overload_coolant_loop.png" id="1_01ffi"]
+[ext_resource type="Script" path="res://content/frames/mhi/mf_wyrm/cp_flux_pinned_radiators/action_overload_coolant_loop.gd" id="1_7mf5f"]
+
+[resource]
+script = ExtResource("1_7mf5f")
+triggers_on = Array[int]([3, 21])
+trigger_timing = 0
+consumes_rxn = false
+starts_hibernating = true
+icon_override = ExtResource("1_01ffi")
+metadata/_custom_type_script = "uid://crqxmv8pxyk6g"

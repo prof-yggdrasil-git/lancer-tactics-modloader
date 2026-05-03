@@ -1,0 +1,14 @@
+[gd_resource type="Resource" script_class="ActionSystemDeploy" load_steps=4 format=3]
+
+[ext_resource type="Resource" path="res://content/gear/mhi/systems/ms_scatter_drone/dep_scatter_drone.tres" id="1_p626m"]
+[ext_resource type="Script" path="res://engine/character/gear_action/archtypes/action_system_deploy.gd" id="1_sc6jy"]
+[ext_resource type="Texture2D" path="res://assets/icons/modded/mhi/ms_scatter_drone.png" id="2_bf4xn"]
+
+[resource]
+script = ExtResource("1_sc6jy")
+deployable_frame = ExtResource("1_p626m")
+deploy_to_sensors = true
+disable_while_deployed = true
+action_type = 1
+icon_override = ExtResource("2_bf4xn")
+metadata/_custom_type_script = "uid://2wdyuf507vdl"

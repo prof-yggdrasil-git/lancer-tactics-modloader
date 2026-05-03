@@ -1,0 +1,15 @@
+[gd_resource type="Resource" load_steps=5 format=3]
+
+[ext_resource type="Resource" path="res://content/frames/ssc/mf_amber_phantom/cp_possibility_mapping/convergence_point/action_convergence_point_end_turn.tres" id="1_vwxwu"]
+[ext_resource type="Script" path="res://content/frames/ssc/mf_amber_phantom/cp_possibility_mapping/convergence_point/action_convergence_point.gd" id="1_wl5v2"]
+[ext_resource type="PackedScene" path="res://content/fx_groups/actions/fxg_base_activation.tscn" id="2_v6g8h"]
+[ext_resource type="Texture2D" path="res://assets/icons/modded/ssc-alts-1st-party/action_convergence_point.png" id="3_1hfod"]
+
+[resource]
+script = ExtResource("1_wl5v2")
+end_turn_reaction = ExtResource("1_vwxwu")
+action_type = 4
+consumes_cp = true
+fxg_use = ExtResource("2_v6g8h")
+icon_override = ExtResource("3_1hfod")
+metadata/_custom_type_script = "uid://cvvlk0g0af1lk"

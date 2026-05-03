@@ -1,0 +1,38 @@
+{
+	"body_size": "big",
+	"colors": {
+		"clothing_inner_primary": "palette_dark_grey",
+		"clothing_inner_secondary": "palette_medium_grey",
+		"clothing_outer_primary": "palette_peacoat",
+		"clothing_outer_secondary": "palette_dark_grey",
+		"head_texture": "palette_neon_silver",
+		"scarves_primary": "palette_dark_grey",
+		"skin": "palette_dark_grey"
+	},
+	"compat_version": 8,
+	"is_nhp": true,
+	"slices": {
+		"accessories_glasses": "blank",
+		"accessories_hair": "blank",
+		"accessories_scarves": "collarruffles",
+		"beard": "beard_9",
+		"body": "body",
+		"clothing_inner": "frilly_shirt",
+		"clothing_outer": "coat",
+		"ears": "pointy",
+		"eyebrows": "downtilted",
+		"eyes": "angular",
+		"hair": "slicked",
+		"head": "triangle2",
+		"head_texture": [
+			"scars5",
+			"scar4",
+			"scar3",
+			"scar2",
+			"wrinkles"
+		],
+		"mouth": "fangs_2",
+		"mustache": "van_dyke",
+		"nose": "wide"
+	}
+}

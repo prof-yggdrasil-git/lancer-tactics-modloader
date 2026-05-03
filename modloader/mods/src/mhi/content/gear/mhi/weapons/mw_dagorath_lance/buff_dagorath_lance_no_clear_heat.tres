@@ -1,0 +1,10 @@
+[gd_resource type="Resource" load_steps=2 format=3]
+
+[ext_resource type="Script" path="res://content/gear/mhi/weapons/mw_dagorath_lance/buff_dagorath_lance_no_clear_heat.gd" id="1_simn0"]
+
+[resource]
+script = ExtResource("1_simn0")
+hide_from_player = true
+triggers_on = Array[int]([13])
+trigger_timing = 0
+metadata/_custom_type_script = "uid://cqrqkdgcf8mti"

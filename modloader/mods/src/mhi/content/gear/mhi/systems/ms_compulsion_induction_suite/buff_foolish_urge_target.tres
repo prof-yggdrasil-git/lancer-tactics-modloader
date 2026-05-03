@@ -1,0 +1,10 @@
+[gd_resource type="Resource" script_class="Buff" load_steps=3 format=3]
+
+[ext_resource type="Script" path="res://engine/character/buff/buff.gd" id="1_okd3y"]
+[ext_resource type="Texture2D" path="res://assets/icons/modded/mhi/buff_foolish_urge.png" id="1_ul6om"]
+
+[resource]
+script = ExtResource("1_okd3y")
+icon = ExtResource("1_ul6om")
+localization_key_override = "ms_compulsion_induction_suite.action_foolish_urge"
+metadata/_custom_type_script = "uid://cqrqkdgcf8mti"

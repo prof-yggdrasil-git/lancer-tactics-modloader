@@ -1,0 +1,12 @@
+[gd_resource type="Resource" load_steps=3 format=3]
+
+[ext_resource type="Script" path="res://content/gear/mhi/systems/ms_scatter_drone/action_scatter_drone_attacked.gd" id="1_8hef3"]
+[ext_resource type="PackedScene" path="res://content/fx_groups/weapons/fxg_grenade_napalm_terminal.tscn" id="1_h5l0o"]
+
+[resource]
+script = ExtResource("1_8hef3")
+fxg = ExtResource("1_h5l0o")
+triggers_on = Array[int]([14])
+trigger_timing = 0
+consumes_rxn = false
+metadata/_custom_type_script = "uid://crqxmv8pxyk6g"

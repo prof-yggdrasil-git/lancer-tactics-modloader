@@ -1,0 +1,31 @@
+[gd_resource type="Resource" script_class="ActionSystemDeploy" load_steps=8 format=3]
+
+[ext_resource type="Script" path="res://engine/character/gear_action/archtypes/action_system_deploy.gd" id="1_2ekwk"]
+[ext_resource type="Resource" path="res://content/frames/ssc/mf_swallowtail_ranger/cp_gaia_inheritance/deployable/dep_gi_soft_cover.tres" id="1_aehmt"]
+[ext_resource type="Texture2D" path="res://assets/icons/cover_soft.svg" id="2_gqeeu"]
+[ext_resource type="Script" path="res://engine/character/gear_action/resources/range_pattern.gd" id="4_el5l1"]
+[ext_resource type="Script" path="res://engine/character/gear_action/resources/target_requirements.gd" id="5_6co45"]
+
+[sub_resource type="Resource" id="Resource_edhue"]
+script = ExtResource("4_el5l1")
+pattern = 1
+value = 1
+metadata/_custom_type_script = "uid://c0yv6pnw2be6l"
+
+[sub_resource type="Resource" id="Resource_bnjg6"]
+script = ExtResource("5_6co45")
+count = 3
+range_pattern = SubResource("Resource_edhue")
+can_target_empty_tiles = true
+can_target_setpieces = true
+multipicks_aoe_can_overlap = true
+metadata/_custom_type_script = "uid://df1yicp7kbf3x"
+
+[resource]
+script = ExtResource("1_2ekwk")
+deployable_frame = ExtResource("1_aehmt")
+deploy_range = 5
+target_requirements_override = SubResource("Resource_bnjg6")
+icon_override = ExtResource("2_gqeeu")
+localization_key_override = "cp_gaia_inheritance.action_guerrilla_warfare"
+metadata/_custom_type_script = "uid://2wdyuf507vdl"

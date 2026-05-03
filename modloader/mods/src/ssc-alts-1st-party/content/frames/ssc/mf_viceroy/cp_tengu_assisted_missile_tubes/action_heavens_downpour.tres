@@ -1,0 +1,19 @@
+[gd_resource type="Resource" load_steps=6 format=3]
+
+[ext_resource type="PackedScene" path="res://content/fx_groups/weapons/launchers/fxg_heavy_launcher_target.tscn" id="1_rpekm"]
+[ext_resource type="Resource" path="res://content/frames/ssc/mf_viceroy/cp_tengu_assisted_missile_tubes/action_heavens_downpour_movement.tres" id="1_wg64b"]
+[ext_resource type="PackedScene" path="res://content/fx_groups/weapons/fxg_divine_punishment.tscn" id="2_dg76u"]
+[ext_resource type="Script" path="res://content/frames/ssc/mf_viceroy/cp_tengu_assisted_missile_tubes/action_heavens_downpour.gd" id="3_rpekm"]
+[ext_resource type="Texture2D" path="res://assets/icons/modded/ssc-alts-1st-party/action_heavens_downpour.png" id="4_rpekm"]
+
+[resource]
+script = ExtResource("3_rpekm")
+action = ExtResource("1_wg64b")
+action_type = 1
+consumes_cp = true
+clears_hidden = true
+fxg_use = ExtResource("2_dg76u")
+fxg_target = ExtResource("1_rpekm")
+icon_override = ExtResource("4_rpekm")
+emit_text_popcorn_on_use = true
+metadata/_custom_type_script = "uid://c6wq6p7arfrwe"

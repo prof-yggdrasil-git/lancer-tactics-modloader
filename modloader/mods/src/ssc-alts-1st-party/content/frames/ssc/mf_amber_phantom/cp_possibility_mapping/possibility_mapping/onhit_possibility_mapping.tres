@@ -1,0 +1,10 @@
+[gd_resource type="Resource" load_steps=4 format=3]
+
+[ext_resource type="Script" path="res://engine/character/buff/buff.gd" id="1_1xy2v"]
+[ext_resource type="Resource" path="res://content/frames/ssc/mf_amber_phantom/cp_possibility_mapping/possibility_mapping/buff_possibility_mapping.tres" id="2_oii6t"]
+[ext_resource type="Script" path="res://content/frames/ssc/mf_amber_phantom/cp_possibility_mapping/possibility_mapping/onhit_possibility_mapping.gd" id="3_t1f8n"]
+
+[resource]
+script = ExtResource("3_t1f8n")
+bonus_damage_buff = ExtResource("2_oii6t")
+metadata/_custom_type_script = "uid://d2nldg6e3doqd"

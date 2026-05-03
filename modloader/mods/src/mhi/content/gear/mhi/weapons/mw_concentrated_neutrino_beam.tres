@@ -1,0 +1,33 @@
+[gd_resource type="Resource" script_class="Kit" load_steps=11 format=3]
+
+[ext_resource type="Texture2D" path="res://assets/icons/actions/weapons/mw_thermal_lance.svg" id="1"]
+[ext_resource type="Script" path="res://engine/character/gear_action/action.gd" id="1_65jpm"]
+[ext_resource type="Script" path="res://engine/character/gear_action/resources/range_pattern.gd" id="2"]
+[ext_resource type="Script" path="res://engine/character/gear_action/resources/damage_value.gd" id="2_vkcc1"]
+[ext_resource type="Script" path="res://engine/character/gear_action/action_attack_weapon.gd" id="3"]
+[ext_resource type="Script" path="res://engine/character/gear/kit.gd" id="4"]
+[ext_resource type="Script" path="res://engine/character/gear_action/resources/on_hit_effect.gd" id="4_icw2f"]
+[ext_resource type="Script" path="res://engine/character/gear_passive/passive.gd" id="7_av0h3"]
+
+[sub_resource type="Resource" id="Resource_0p7e2"]
+script = ExtResource("2")
+pattern = 2
+value = 15
+metadata/_custom_type_script = "uid://c0yv6pnw2be6l"
+
+[sub_resource type="Resource" id="Resource_65jpm"]
+script = ExtResource("3")
+damage_type = 1
+damage_dice = "1"
+weapon_type = 1
+aim_range = 15
+tags = Array[int]([3, 0])
+range_pattern = SubResource("Resource_0p7e2")
+self_heat_dice = "1"
+icon_override = ExtResource("1")
+metadata/_custom_type_script = "uid://vi3dfs5ql3lg"
+
+[resource]
+script = ExtResource("4")
+actions = Array[ExtResource("1_65jpm")]([SubResource("Resource_65jpm")])
+metadata/_custom_type_script = "uid://ckrv6mvs5q65e"

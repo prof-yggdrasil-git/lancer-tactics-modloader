@@ -1,0 +1,15 @@
+[gd_resource type="Resource" load_steps=7 format=3]
+
+[ext_resource type="Script" path="res://engine/character/gear_action/resources/damage_value.gd" id="1_kplyd"]
+[ext_resource type="Resource" path="res://content/gear/mhi/systems/ms_compulsion_induction_suite/buff_sudden_anger.tres" id="2_na0el"]
+[ext_resource type="Script" path="res://engine/character/gear_action/resources/on_hit_effect.gd" id="2_w4hyd"]
+[ext_resource type="Resource" path="res://content/gear/mhi/systems/ms_compulsion_induction_suite/buff_sudden_anger_target.tres" id="3_bcjf5"]
+[ext_resource type="Texture2D" path="res://assets/icons/modded/mhi/action_sudden_anger.png" id="4_f0ove"]
+[ext_resource type="Script" path="res://content/gear/mhi/systems/ms_compulsion_induction_suite/action_sudden_anger.gd" id="7_hktby"]
+
+[resource]
+script = ExtResource("7_hktby")
+buff_self = ExtResource("2_na0el")
+buff_target = ExtResource("3_bcjf5")
+icon_override = ExtResource("4_f0ove")
+metadata/_custom_type_script = "uid://bmkbhm13soupd"

@@ -1,0 +1,12 @@
+[gd_resource type="Resource" script_class="MovementType" load_steps=2 format=3]
+
+[ext_resource type="Script" path="res://engine/character/unit/movement_type.gd" id="1_igek2"]
+
+[resource]
+script = ExtResource("1_igek2")
+ignore_rxns = true
+ignore_engagement = true
+straight_line = true
+must_move_max_possible = true
+jump_downhill = true
+metadata/_custom_type_script = "uid://udxarj3kb6nm"

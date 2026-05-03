@@ -1,0 +1,22 @@
+[gd_resource type="Resource" script_class="Frame" load_steps=7 format=3]
+
+[ext_resource type="Script" path="res://engine/character/gear/kit.gd" id="1_ybud0"]
+[ext_resource type="Script" path="res://engine/character/unit_core/frame.gd" id="2_gkc82"]
+[ext_resource type="Texture2D" path="res://assets/units/deployable/blank.png" id="3_3lwgy"]
+[ext_resource type="Script" path="res://engine/character/unit/statblock.gd" id="4_x7afc"]
+[ext_resource type="Resource" path="res://content/frames/ssc/mf_swallowtail_ranger/mt_scout_battlefield/deployable/mt_sb_difficult_terrain.tres" id="5_vpqk4"]
+
+[sub_resource type="Resource" id="Resource_2k22c"]
+script = ExtResource("4_x7afc")
+size = 1
+is_size_half = true
+metadata/_custom_type_script = "uid://bxpc46igtsmvw"
+
+[resource]
+script = ExtResource("2_gkc82")
+sprites = Array[Texture2D]([ExtResource("3_3lwgy")])
+traits = Array[ExtResource("1_ybud0")]([ExtResource("5_vpqk4")])
+stat = SubResource("Resource_2k22c")
+entity_type = 2
+is_obstruction = false
+metadata/_custom_type_script = "uid://daycu0mqh1rbq"

@@ -1,0 +1,40 @@
+[gd_resource type="Resource" script_class="Frame" load_steps=12 format=3]
+
+[ext_resource type="Script" path="res://engine/character/gear/kit.gd" id="1_v4twp"]
+[ext_resource type="Script" path="res://engine/character/unit_core/frame.gd" id="2_jivuh"]
+[ext_resource type="Texture2D" path="res://assets/units/pc/ssc_swallowtail_ranger.png" id="3_gda08"]
+[ext_resource type="Texture2D" path="res://assets/units/pc/ssc_swallowtail.png" id="3_p1kvt"]
+[ext_resource type="Script" path="res://engine/character/unit/statblock.gd" id="4_ll01p"]
+[ext_resource type="Texture2D" path="res://assets/units/custom/custom_cambiare.png" id="5_7s2de"]
+[ext_resource type="Resource" path="res://content/frames/ssc/mf_swallowtail_ranger/cp_gaia_inheritance/cp_gaia_inheritance.tres" id="5_wacgs"]
+[ext_resource type="Resource" path="res://content/frames/ssc/mf_swallowtail_ranger/mt_scout_battlefield/mt_scout_battlefield.tres" id="6_gda08"]
+[ext_resource type="Resource" path="res://content/frames/ssc/mf_swallowtail_ranger/mt_invigorating_scanners/mt_invigorating_scanners.tres" id="7_7s2de"]
+[ext_resource type="Resource" path="res://content/frames/ssc/mf_swallowtail_ranger/mt_weathering.tres" id="9_7s2de"]
+
+[sub_resource type="Resource" id="Resource_vijpi"]
+script = ExtResource("4_ll01p")
+size = 1
+structure = 4
+stress = 4
+health = 6
+evasion = 10
+edef = 8
+speed = 6
+heat = 4
+save_target = 10
+sensor_range = 20
+tech_attack = 1
+repairs = 5
+systems_points = 6
+reactions = 1
+activations = 1
+metadata/_custom_type_script = "uid://bxpc46igtsmvw"
+
+[resource]
+script = ExtResource("2_jivuh")
+sprites = Array[Texture2D]([ExtResource("3_gda08"), ExtResource("3_p1kvt"), ExtResource("5_7s2de")])
+traits = Array[ExtResource("1_v4twp")]([ExtResource("5_wacgs"), ExtResource("6_gda08"), ExtResource("7_7s2de"), ExtResource("9_7s2de")])
+mount_types = Array[int]([0, 1])
+stat = SubResource("Resource_vijpi")
+role_primary = 5
+metadata/_custom_type_script = "uid://daycu0mqh1rbq"

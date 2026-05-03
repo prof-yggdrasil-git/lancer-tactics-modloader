@@ -1,0 +1,11 @@
+[gd_resource type="Resource" load_steps=3 format=3]
+
+[ext_resource type="Script" path="res://content/gear/mhi/systems/ms_ancalagon_nhp/buff_ancalagon_nhp.gd" id="1_h66ok"]
+[ext_resource type="Texture2D" path="res://assets/icons/modded/mhi/ms_ancalagon_nhp.png" id="1_kt2rb"]
+
+[resource]
+script = ExtResource("1_h66ok")
+until = 3
+triggers_on = Array[int]([21, 15])
+icon = ExtResource("1_kt2rb")
+metadata/_custom_type_script = "uid://dc7jjr1i6kl7p"

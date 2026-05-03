@@ -1,0 +1,14 @@
+[gd_resource type="Resource" load_steps=6 format=3]
+
+[ext_resource type="Script" path="res://engine/character/buff/buff.gd" id="1_1lxi6"]
+[ext_resource type="Texture2D" path="res://assets/icons/aoe_line.svg" id="2_gonsr"]
+[ext_resource type="Resource" path="res://content/gear/mhi/systems/wm_tightbeam_mod/buff_tightbeam_mod.tres" id="2_lyt50"]
+[ext_resource type="Script" path="res://engine/character/gear_action/resources/on_hit_effect.gd" id="2_mju8t"]
+[ext_resource type="Script" path="res://content/gear/mhi/systems/wm_tightbeam_mod/passive_tightbeam_mod.gd" id="5_tlbnr"]
+
+[resource]
+script = ExtResource("5_tlbnr")
+allowed_types = Array[int]([1, 0, 3])
+applied_buffs = Array[ExtResource("1_1lxi6")]([ExtResource("2_lyt50")])
+icon_override = ExtResource("2_gonsr")
+metadata/_custom_type_script = "uid://ch8avblisp8j1"

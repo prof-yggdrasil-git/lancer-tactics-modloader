@@ -1,0 +1,12 @@
+[gd_resource type="Resource" script_class="Kit" load_steps=5 format=3]
+
+[ext_resource type="Script" path="res://engine/character/gear_action/action.gd" id="1_hunbv"]
+[ext_resource type="Script" path="res://engine/character/gear_passive/passive.gd" id="2_obnsl"]
+[ext_resource type="Resource" path="res://content/frames/ssc/mf_swallowtail_ranger/mt_scout_battlefield/action_scout_battlefield.tres" id="2_syea5"]
+[ext_resource type="Script" path="res://engine/character/gear/kit.gd" id="3_a0o1m"]
+
+[resource]
+script = ExtResource("3_a0o1m")
+actions = Array[ExtResource("1_hunbv")]([ExtResource("2_syea5")])
+is_trait = true
+metadata/_custom_type_script = "uid://ckrv6mvs5q65e"

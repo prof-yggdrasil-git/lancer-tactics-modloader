@@ -1,0 +1,14 @@
+[gd_resource type="Resource" script_class="Kit" load_steps=6 format=3]
+
+[ext_resource type="Script" path="res://engine/character/gear_action/action.gd" id="1_jnrgf"]
+[ext_resource type="Script" path="res://engine/character/gear_passive/passive.gd" id="2_fts81"]
+[ext_resource type="Texture2D" path="res://assets/icons/modded/ssc-alts-1st-party/mt_near_threat_targeting_processor.png" id="2_y5nk1"]
+[ext_resource type="Script" path="res://engine/character/gear/kit.gd" id="3_y5nk1"]
+[ext_resource type="Resource" path="res://content/frames/ssc/mf_viceroy/mt_near_threat_targeting_processor/passive_nttp.tres" id="4_y5nk1"]
+
+[resource]
+script = ExtResource("3_y5nk1")
+passives = Array[ExtResource("2_fts81")]([ExtResource("4_y5nk1")])
+is_trait = true
+icon_override = ExtResource("2_y5nk1")
+metadata/_custom_type_script = "uid://ckrv6mvs5q65e"

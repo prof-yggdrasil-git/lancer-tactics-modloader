@@ -1,0 +1,16 @@
+[gd_resource type="Resource" script_class="Kit" load_steps=7 format=3]
+
+[ext_resource type="Script" path="res://engine/character/gear_action/action.gd" id="1_hk3bc"]
+[ext_resource type="Resource" path="res://content/gear/mhi/systems/ms_scatter_drone/action_scatter_drone.tres" id="2_l3llp"]
+[ext_resource type="Script" path="res://engine/character/gear_passive/passive.gd" id="2_snhv8"]
+[ext_resource type="Resource" path="res://content/gear/shared/action_redeploy/action_redeploy.tres" id="3_a0opo"]
+[ext_resource type="Resource" path="res://content/gear/mhi/systems/ms_scatter_drone/action_scatter_drone_attacked.tres" id="3_ayh7e"]
+[ext_resource type="Script" path="res://engine/character/gear/kit.gd" id="3_l3llp"]
+
+[resource]
+script = ExtResource("3_l3llp")
+actions = Array[ExtResource("1_hk3bc")]([ExtResource("2_l3llp"), ExtResource("3_a0opo"), ExtResource("3_ayh7e")])
+sp_cost = 2
+system_tags = 1
+charges_max = 2
+metadata/_custom_type_script = "uid://ckrv6mvs5q65e"

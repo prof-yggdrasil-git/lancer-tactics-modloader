@@ -1,0 +1,13 @@
+[gd_resource type="Resource" load_steps=2 format=3]
+
+[ext_resource type="Script" path="res://content/frames/ssc/mf_orchis/mt_perfect_parry/buff_perfect_parry_post.gd" id="1_vncbs"]
+
+[resource]
+script = ExtResource("1_vncbs")
+damage_types = Array[int]([0, 1, 2, 4, 3])
+resist_self_inflicted = true
+until = 9
+to = 24
+hide_from_player = true
+triggers_on = Array[int]([2])
+metadata/_custom_type_script = "uid://cqrqkdgcf8mti"

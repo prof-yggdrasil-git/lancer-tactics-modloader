@@ -1,0 +1,9 @@
+[gd_resource type="Resource" script_class="Buff" load_steps=3 format=3]
+
+[ext_resource type="Texture2D" path="res://assets/icons/modded/ssc-alts-1st-party/buff_guerrilla_warfare.png" id="1_7v55q"]
+[ext_resource type="Script" path="res://engine/character/buff/buff.gd" id="1_ulhto"]
+
+[resource]
+script = ExtResource("1_ulhto")
+icon = ExtResource("1_7v55q")
+metadata/_custom_type_script = "uid://cqrqkdgcf8mti"

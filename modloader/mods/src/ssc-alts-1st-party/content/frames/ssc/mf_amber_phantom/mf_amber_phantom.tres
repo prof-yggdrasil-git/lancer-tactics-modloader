@@ -1,0 +1,36 @@
+[gd_resource type="Resource" script_class="Frame" load_steps=9 format=3]
+
+[ext_resource type="Script" path="res://engine/character/gear/kit.gd" id="1_m8x04"]
+[ext_resource type="Script" path="res://engine/character/unit_core/frame.gd" id="2_j4x1p"]
+[ext_resource type="Texture2D" path="res://assets/units/pc/ssc_amber_phantom.png" id="3_drlvg"]
+[ext_resource type="Script" path="res://engine/character/unit/statblock.gd" id="4_y4dth"]
+[ext_resource type="Resource" path="res://content/frames/ssc/mf_amber_phantom/cp_possibility_mapping/cp_possibility_mapping.tres" id="5_5d3wx"]
+[ext_resource type="Resource" path="res://content/frames/ssc/mf_amber_phantom/mt_hyperawareness/mt_hyperawareness.tres" id="6_oln2m"]
+[ext_resource type="Resource" path="res://content/frames/ssc/mf_amber_phantom/mt_battle_oracle/mt_battle_oracle.tres" id="7_glwch"]
+
+[sub_resource type="Resource" id="Resource_clonb"]
+script = ExtResource("4_y4dth")
+size = 1
+structure = 4
+stress = 4
+health = 8
+evasion = 12
+edef = 6
+speed = 5
+heat = 5
+save_target = 10
+sensor_range = 10
+repairs = 4
+systems_points = 5
+reactions = 1
+activations = 1
+metadata/_custom_type_script = "uid://bxpc46igtsmvw"
+
+[resource]
+script = ExtResource("2_j4x1p")
+sprites = Array[Texture2D]([ExtResource("3_drlvg")])
+traits = Array[ExtResource("1_m8x04")]([ExtResource("5_5d3wx"), ExtResource("6_oln2m"), ExtResource("7_glwch")])
+mount_types = Array[int]([3, 0, 1])
+stat = SubResource("Resource_clonb")
+role_primary = 1
+metadata/_custom_type_script = "uid://daycu0mqh1rbq"

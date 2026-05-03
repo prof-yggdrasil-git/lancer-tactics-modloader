@@ -1,0 +1,15 @@
+[gd_resource type="Resource" script_class="ActionSystemApplyBuff" load_steps=5 format=3]
+
+[ext_resource type="Script" path="res://engine/character/buff/buff.gd" id="1_5cpd6"]
+[ext_resource type="Resource" path="res://content/gear/mhi/systems/ms_ancalagon_nhp/buff_ancalagon_nhp.tres" id="2_e5wkf"]
+[ext_resource type="Script" path="res://engine/character/gear_action/archtypes/action_system_apply_buff.gd" id="2_sjvx0"]
+[ext_resource type="Texture2D" path="res://assets/icons/modded/mhi/ms_ancalagon_nhp.png" id="3_e5wkf"]
+
+[resource]
+script = ExtResource("2_sjvx0")
+buffs = Array[ExtResource("1_5cpd6")]([ExtResource("2_e5wkf")])
+apply_only_to_self = true
+action_type = 4
+self_heat_dice = "2"
+icon_override = ExtResource("3_e5wkf")
+metadata/_custom_type_script = "uid://cm50wdj5g8syg"

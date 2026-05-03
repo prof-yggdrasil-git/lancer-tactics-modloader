@@ -1,0 +1,12 @@
+[gd_resource type="Resource" script_class="Kit" load_steps=5 format=3]
+
+[ext_resource type="Script" path="res://engine/character/gear_action/action.gd" id="1_hei5c"]
+[ext_resource type="Script" path="res://engine/character/gear_passive/passive.gd" id="2_gdkyv"]
+[ext_resource type="Resource" path="res://content/frames/mhi/mf_wyrm/mt_convective_heat_transfer/action_convective_heat_transfer.tres" id="2_s22jd"]
+[ext_resource type="Script" path="res://engine/character/gear/kit.gd" id="3_s22jd"]
+
+[resource]
+script = ExtResource("3_s22jd")
+actions = Array[ExtResource("1_hei5c")]([ExtResource("2_s22jd")])
+is_trait = true
+metadata/_custom_type_script = "uid://ckrv6mvs5q65e"

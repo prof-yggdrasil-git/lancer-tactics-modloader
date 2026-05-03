@@ -1,0 +1,11 @@
+[gd_resource type="Resource" script_class="BuffModifyAttackRoll" load_steps=2 format=3]
+
+[ext_resource type="Script" path="res://engine/character/buff/archtypes/buff_modify_attack_roll.gd" id="1_h5ws3"]
+
+[resource]
+script = ExtResource("1_h5ws3")
+step = 1
+until = 8
+to = 10
+hide_from_player = true
+metadata/_custom_type_script = "uid://bc822ohbraldp"

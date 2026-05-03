@@ -1,0 +1,11 @@
+[gd_resource type="Resource" load_steps=2 format=3]
+
+[ext_resource type="Script" path="res://content/gear/mhi/systems/ms_compulsion_induction_suite/movementtype_foolish_urge.gd" id="1_jvdrv"]
+
+[resource]
+script = ExtResource("1_jvdrv")
+spend_move = true
+ignore_engagement = true
+ignore_difficult = true
+jump_downhill = true
+metadata/_custom_type_script = "uid://udxarj3kb6nm"

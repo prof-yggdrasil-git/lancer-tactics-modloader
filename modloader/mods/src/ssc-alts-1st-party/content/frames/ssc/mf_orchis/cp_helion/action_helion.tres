@@ -1,0 +1,17 @@
+[gd_resource type="Resource" load_steps=5 format=3]
+
+[ext_resource type="Resource" path="res://content/frames/ssc/mf_orchis/cp_helion/buff_helion_autohit.tres" id="1_gnnn3"]
+[ext_resource type="Texture2D" path="res://assets/icons/modded/ssc-alts-1st-party/cp_helion.png" id="2_swtum"]
+[ext_resource type="Resource" path="res://content/gear/basic/mw_ram/action_ram.tres" id="2_ux68a"]
+[ext_resource type="Script" path="res://content/frames/ssc/mf_orchis/cp_helion/action_helion.gd" id="3_swtum"]
+
+[resource]
+script = ExtResource("3_swtum")
+ram = ExtResource("2_ux68a")
+buff = ExtResource("1_gnnn3")
+action_type = 1
+consumes_cp = true
+clears_hidden = true
+usage_group = &"helion"
+icon_override = ExtResource("2_swtum")
+metadata/_custom_type_script = "uid://vi3dfs5ql3lg"

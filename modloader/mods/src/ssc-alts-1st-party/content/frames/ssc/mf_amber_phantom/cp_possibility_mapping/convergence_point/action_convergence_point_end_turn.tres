@@ -1,0 +1,9 @@
+[gd_resource type="Resource" load_steps=2 format=3]
+
+[ext_resource type="Script" path="res://content/frames/ssc/mf_amber_phantom/cp_possibility_mapping/convergence_point/action_convergence_point_end_turn.gd" id="1_2ohxn"]
+
+[resource]
+script = ExtResource("1_2ohxn")
+triggers_on = Array[int]([11])
+consumes_rxn = false
+metadata/_custom_type_script = "uid://crqxmv8pxyk6g"

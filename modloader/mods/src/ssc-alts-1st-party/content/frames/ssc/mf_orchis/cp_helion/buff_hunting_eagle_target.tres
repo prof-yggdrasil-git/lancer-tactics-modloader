@@ -1,0 +1,13 @@
+[gd_resource type="Resource" load_steps=3 format=3]
+
+[ext_resource type="Script" path="res://content/frames/ssc/mf_orchis/cp_helion/buff_hunting_eagle_target.gd" id="1_n3dl1"]
+[ext_resource type="Texture2D" path="res://assets/icons/modded/ssc-alts-1st-party/buff_hunting_eagle.png" id="1_sklqn"]
+
+[resource]
+script = ExtResource("1_n3dl1")
+until = 1
+to = 20
+icon = ExtResource("1_sklqn")
+log_on_application = true
+localization_key_override = "cp_helion.action_hunting_eagle"
+metadata/_custom_type_script = "uid://d3gc8vfc68mfc"

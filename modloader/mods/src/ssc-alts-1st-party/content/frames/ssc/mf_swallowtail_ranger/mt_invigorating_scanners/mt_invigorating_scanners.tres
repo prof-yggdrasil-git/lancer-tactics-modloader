@@ -1,0 +1,12 @@
+[gd_resource type="Resource" script_class="Kit" load_steps=5 format=3]
+
+[ext_resource type="Script" path="res://engine/character/gear_action/action.gd" id="1_pjo2h"]
+[ext_resource type="Script" path="res://engine/character/gear_passive/passive.gd" id="2_jsuwf"]
+[ext_resource type="Resource" path="res://content/frames/ssc/mf_swallowtail_ranger/mt_invigorating_scanners/action_invigorating_scanners.tres" id="2_wnb1u"]
+[ext_resource type="Script" path="res://engine/character/gear/kit.gd" id="3_wnb1u"]
+
+[resource]
+script = ExtResource("3_wnb1u")
+actions = Array[ExtResource("1_pjo2h")]([ExtResource("2_wnb1u")])
+is_trait = true
+metadata/_custom_type_script = "uid://ckrv6mvs5q65e"

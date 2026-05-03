@@ -1,0 +1,19 @@
+[gd_resource type="Resource" load_steps=6 format=3]
+
+[ext_resource type="Resource" path="res://content/frames/ssc/mf_swallowtail_ranger/cp_gaia_inheritance/action_deploy_soft_cover.tres" id="1_t4kdx"]
+[ext_resource type="Script" path="res://engine/character/buff/buff.gd" id="2_80jos"]
+[ext_resource type="Resource" path="res://content/frames/ssc/mf_swallowtail_ranger/cp_gaia_inheritance/buff_guerrilla_warfare.tres" id="3_cr4ip"]
+[ext_resource type="Texture2D" path="res://assets/icons/modded/ssc-alts-1st-party/buff_guerrilla_warfare.png" id="4_80jos"]
+[ext_resource type="Script" path="res://content/frames/ssc/mf_swallowtail_ranger/cp_gaia_inheritance/action_guerrilla_warfare.gd" id="4_81nt4"]
+
+[resource]
+script = ExtResource("4_81nt4")
+action = ExtResource("1_t4kdx")
+buffs = Array[ExtResource("2_80jos")]([ExtResource("3_cr4ip")])
+apply_range = 0
+apply_only_to_self = true
+can_apply_to_self = true
+action_type = 4
+consumes_cp = true
+icon_override = ExtResource("4_80jos")
+metadata/_custom_type_script = "uid://cm50wdj5g8syg"

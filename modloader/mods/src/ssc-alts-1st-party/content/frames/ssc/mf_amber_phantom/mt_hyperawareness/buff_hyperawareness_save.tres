@@ -1,0 +1,13 @@
+[gd_resource type="Resource" script_class="BuffSkillSave" load_steps=3 format=3]
+
+[ext_resource type="Script" path="res://engine/character/buff/archtypes/buff_skill_save.gd" id="1_c1o27"]
+[ext_resource type="Texture2D" path="res://assets/icons/modded/ssc-alts-1st-party/mt_hyperawareness.png" id="1_gkgeh"]
+
+[resource]
+script = ExtResource("1_c1o27")
+all_save_types = true
+mod = 1
+until = 3
+to = 3
+icon = ExtResource("1_gkgeh")
+metadata/_custom_type_script = "uid://d1ariwna5bslg"

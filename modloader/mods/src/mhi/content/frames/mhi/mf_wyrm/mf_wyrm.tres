@@ -1,0 +1,50 @@
+[gd_resource type="Resource" script_class="Frame" load_steps=15 format=3]
+
+[ext_resource type="Texture2D" path="res://assets/palettes/palette_redeye.png" id="1_reuy8"]
+[ext_resource type="Texture2D" path="res://assets/palettes/palette_cafe_noir.png" id="2_ksrkg"]
+[ext_resource type="Texture2D" path="res://assets/palettes/palette_squash_orange.png" id="3"]
+[ext_resource type="Script" path="res://engine/character/unit_core/color_scheme.gd" id="4"]
+[ext_resource type="Script" path="res://engine/character/unit_core/frame.gd" id="5"]
+[ext_resource type="Script" path="res://engine/character/gear/kit.gd" id="5_1fasg"]
+[ext_resource type="Texture2D" path="res://assets/units/pc/mhi_wyrm.png" id="7_wvbud"]
+[ext_resource type="Script" path="res://engine/character/unit/statblock.gd" id="8"]
+[ext_resource type="Resource" path="res://content/frames/mhi/mf_wyrm/mt_convective_heat_transfer/mt_convective_heat_transfer.tres" id="10_ksrkg"]
+[ext_resource type="Resource" path="res://content/frames/mhi/mf_wyrm/mt_spontaneous_immolation/mt_spontaneous_immolation.tres" id="11_fejna"]
+[ext_resource type="Resource" path="res://content/frames/shared/mt_fragile.tres" id="12_xqfu3"]
+[ext_resource type="Resource" path="res://content/frames/mhi/mf_wyrm/cp_flux_pinned_radiators/cp_flux_pinned_radiators.tres" id="13_1kjka"]
+
+[sub_resource type="Resource" id="Resource_gm3n1"]
+script = ExtResource("4")
+palette_0 = ExtResource("1_reuy8")
+palette_1 = ExtResource("2_ksrkg")
+palette_2 = ExtResource("3")
+metadata/_custom_type_script = "uid://dch85ypcupfgo"
+
+[sub_resource type="Resource" id="Resource_s5k0v"]
+script = ExtResource("8")
+size = 2
+structure = 4
+stress = 4
+health = 8
+evasion = 8
+edef = 8
+speed = 5
+heat = 8
+save_target = 10
+sensor_range = 15
+tech_attack = 1
+repairs = 3
+systems_points = 5
+reactions = 1
+activations = 1
+metadata/_custom_type_script = "uid://bxpc46igtsmvw"
+
+[resource]
+script = ExtResource("5")
+default_color_scheme = SubResource("Resource_gm3n1")
+sprites = Array[Texture2D]([ExtResource("7_wvbud")])
+traits = Array[ExtResource("5_1fasg")]([ExtResource("10_ksrkg"), ExtResource("11_fejna"), ExtResource("12_xqfu3"), ExtResource("13_1kjka")])
+mount_types = Array[int]([4, 0, 1])
+stat = SubResource("Resource_s5k0v")
+role_primary = 4
+metadata/_custom_type_script = "uid://daycu0mqh1rbq"

@@ -1,0 +1,21 @@
+[gd_resource type="Resource" script_class="Kit" load_steps=9 format=3]
+
+[ext_resource type="Script" path="res://engine/character/gear_action/action.gd" id="1_6ycob"]
+[ext_resource type="Script" path="res://engine/character/gear_passive/passive.gd" id="2_mvfuy"]
+[ext_resource type="Resource" path="res://content/frames/ssc/mf_orchis/mt_perfect_parry/action_perfect_parry_adjacent.tres" id="2_sf4h3"]
+[ext_resource type="Script" path="res://engine/character/gear/kit.gd" id="3_3tnlw"]
+[ext_resource type="Script" path="res://engine/character/buff/buff.gd" id="3_vg4ii"]
+[ext_resource type="Resource" path="res://content/frames/ssc/mf_orchis/mt_perfect_parry/buff_perfect_parry.tres" id="4_sf4h3"]
+[ext_resource type="Script" path="res://engine/character/gear_passive/passive_buff_applicator.gd" id="5_bahv5"]
+
+[sub_resource type="Resource" id="Resource_e5s0u"]
+script = ExtResource("5_bahv5")
+applied_buffs = Array[ExtResource("3_vg4ii")]([ExtResource("4_sf4h3")])
+metadata/_custom_type_script = "uid://dy4kg537rc55e"
+
+[resource]
+script = ExtResource("3_3tnlw")
+actions = Array[ExtResource("1_6ycob")]([ExtResource("2_sf4h3")])
+passives = Array[ExtResource("2_mvfuy")]([SubResource("Resource_e5s0u")])
+is_trait = true
+metadata/_custom_type_script = "uid://ckrv6mvs5q65e"

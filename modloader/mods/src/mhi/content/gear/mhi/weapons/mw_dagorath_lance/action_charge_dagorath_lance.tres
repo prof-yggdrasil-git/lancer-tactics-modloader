@@ -1,0 +1,16 @@
+[gd_resource type="Resource" load_steps=6 format=3]
+
+[ext_resource type="Script" path="res://content/gear/mhi/weapons/mw_dagorath_lance/action_charge_dagorath_lance.gd" id="1_d6ia0"]
+[ext_resource type="Script" path="res://engine/character/buff/buff.gd" id="1_pnjrs"]
+[ext_resource type="Resource" path="res://content/gear/mhi/weapons/mw_dagorath_lance/buff_dagorath_lance.tres" id="2_tss6y"]
+[ext_resource type="Resource" path="res://content/gear/mhi/weapons/mw_dagorath_lance/buff_dagorath_lance_no_clear_heat.tres" id="3_7cjjr"]
+[ext_resource type="Texture2D" path="res://assets/icons/modded/mhi/action_charge_dagorath_lance.png" id="4_rd8lu"]
+
+[resource]
+script = ExtResource("1_d6ia0")
+buffs = Array[ExtResource("1_pnjrs")]([ExtResource("2_tss6y"), ExtResource("3_7cjjr")])
+apply_only_to_self = true
+action_type = 1
+usage_group = &"mw_dagorath_lance2"
+icon_override = ExtResource("4_rd8lu")
+metadata/_custom_type_script = "uid://cm50wdj5g8syg"

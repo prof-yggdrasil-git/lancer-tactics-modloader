@@ -1,0 +1,14 @@
+[gd_resource type="Resource" load_steps=4 format=3]
+
+[ext_resource type="Script" path="res://content/frames/ssc/mf_orchis/cp_helion/action_hunting_eagle.gd" id="1_mymo8"]
+[ext_resource type="Resource" path="res://content/frames/ssc/mf_orchis/cp_helion/buff_hunting_eagle_target.tres" id="1_x6hye"]
+[ext_resource type="Texture2D" path="res://assets/icons/modded/ssc-alts-1st-party/buff_hunting_eagle.png" id="2_munoj"]
+
+[resource]
+script = ExtResource("1_mymo8")
+buff = ExtResource("1_x6hye")
+triggers_on = Array[int]([24])
+consumes_rxn = false
+usage_group = &"hunting_eagle"
+icon_override = ExtResource("2_munoj")
+metadata/_custom_type_script = "uid://crqxmv8pxyk6g"

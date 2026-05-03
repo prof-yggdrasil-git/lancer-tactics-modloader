@@ -1,0 +1,17 @@
+[gd_resource type="Resource" script_class="Kit" load_steps=9 format=3]
+
+[ext_resource type="Script" path="res://engine/character/gear_action/action.gd" id="1_emh0g"]
+[ext_resource type="Resource" path="res://content/frames/mhi/mf_wyrm/cp_flux_pinned_radiators/action_radiative_cooling.tres" id="2_fw6yv"]
+[ext_resource type="Resource" path="res://content/frames/mhi/mf_wyrm/cp_flux_pinned_radiators/action_redline_dispersion.tres" id="3_wjvgj"]
+[ext_resource type="Resource" path="res://content/frames/mhi/mf_wyrm/cp_flux_pinned_radiators/action_overload_coolant_loop.tres" id="4_hvgw5"]
+[ext_resource type="Script" path="res://engine/character/gear_passive/passive.gd" id="5_02fqp"]
+[ext_resource type="Resource" path="res://content/frames/mhi/mf_wyrm/cp_flux_pinned_radiators/action_regain_cp.tres" id="5_fw6yv"]
+[ext_resource type="Script" path="res://engine/character/gear/kit.gd" id="6_ievbr"]
+[ext_resource type="Texture2D" path="res://assets/icons/modded/mhi/cp_overload_coolant_loop.png" id="6_wjvgj"]
+
+[resource]
+script = ExtResource("6_ievbr")
+actions = Array[ExtResource("1_emh0g")]([ExtResource("2_fw6yv"), ExtResource("3_wjvgj"), ExtResource("4_hvgw5"), ExtResource("5_fw6yv")])
+is_trait = true
+icon_override = ExtResource("6_wjvgj")
+metadata/_custom_type_script = "uid://ckrv6mvs5q65e"

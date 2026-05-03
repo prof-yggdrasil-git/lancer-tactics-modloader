@@ -1,0 +1,18 @@
+[gd_resource type="Resource" load_steps=7 format=3]
+
+[ext_resource type="Resource" path="res://content/frames/ssc/mf_swallowtail_ranger/cp_gaia_inheritance/buff_guerrilla_warfare.tres" id="1_4e4ep"]
+[ext_resource type="Script" path="res://engine/character/buff/buff.gd" id="1_hvdnp"]
+[ext_resource type="Script" path="res://content/frames/ssc/mf_swallowtail_ranger/cp_gaia_inheritance/action_grounded.gd" id="2_hvdnp"]
+[ext_resource type="Resource" path="res://content/frames/ssc/mf_swallowtail_ranger/cp_gaia_inheritance/buff_grounded.tres" id="2_y0to2"]
+[ext_resource type="Resource" path="res://content/frames/ssc/mf_swallowtail_ranger/cp_gaia_inheritance/buff_grounded_invisibility.tres" id="3_b3vx1"]
+[ext_resource type="Texture2D" path="res://assets/icons/modded/ssc-alts-1st-party/buff_grounded.png" id="5_eaxao"]
+
+[resource]
+script = ExtResource("2_hvdnp")
+buff = ExtResource("1_4e4ep")
+buff2 = ExtResource("2_y0to2")
+buffs = Array[ExtResource("1_hvdnp")]([ExtResource("3_b3vx1")])
+triggers_on = Array[int]([11, 10, 15])
+consumes_rxn = false
+icon_override = ExtResource("5_eaxao")
+metadata/_custom_type_script = "uid://cq0fuxx7pf0su"

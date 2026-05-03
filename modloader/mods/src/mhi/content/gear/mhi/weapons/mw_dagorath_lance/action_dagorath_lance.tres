@@ -1,0 +1,38 @@
+[gd_resource type="Resource" load_steps=10 format=3]
+
+[ext_resource type="Script" path="res://engine/character/gear_action/resources/damage_value.gd" id="1_7xeat"]
+[ext_resource type="Script" path="res://engine/character/gear_action/resources/on_hit_effect.gd" id="2_0buxf"]
+[ext_resource type="Resource" path="res://content/gear/mhi/weapons/mw_dagorath_lance/buff_dagorath_lance.tres" id="2_fjuph"]
+[ext_resource type="Script" path="res://engine/character/gear_action/resources/range_pattern.gd" id="3_0buxf"]
+[ext_resource type="Resource" path="res://content/gear/mhi/weapons/mw_dagorath_lance/buff_dagorath_lance_no_clear_heat.tres" id="3_8r4in"]
+[ext_resource type="Script" path="res://content/gear/mhi/weapons/mw_dagorath_lance/action_dagorath_lance.gd" id="4_0buxf"]
+[ext_resource type="Texture2D" path="res://assets/icons/modded/mhi/action_dagorath_lance.png" id="4_8r4in"]
+
+[sub_resource type="Resource" id="Resource_fb2s3"]
+script = ExtResource("1_7xeat")
+dice = "6"
+type = 4
+metadata/_custom_type_script = "uid://cs5u2sk1kig6i"
+
+[sub_resource type="Resource" id="Resource_fjuph"]
+script = ExtResource("3_0buxf")
+pattern = 2
+value = 20
+metadata/_custom_type_script = "uid://c0yv6pnw2be6l"
+
+[resource]
+script = ExtResource("4_0buxf")
+buff = ExtResource("2_fjuph")
+buff2 = ExtResource("3_8r4in")
+damage_type = 1
+damage_dice = "2d6"
+weapon_size = 3
+weapon_type = 1
+aim_range = 20
+tags = Array[int]([9])
+range_pattern = SubResource("Resource_fjuph")
+additional_damage_values = Array[ExtResource("1_7xeat")]([SubResource("Resource_fb2s3")])
+self_heat_dice = "7"
+starts_hibernating = true
+icon_override = ExtResource("4_8r4in")
+metadata/_custom_type_script = "uid://vi3dfs5ql3lg"

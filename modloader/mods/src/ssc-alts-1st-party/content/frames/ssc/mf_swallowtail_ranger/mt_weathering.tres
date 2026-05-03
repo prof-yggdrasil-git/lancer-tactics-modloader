@@ -1,0 +1,33 @@
+[gd_resource type="Resource" script_class="Kit" load_steps=12 format=3]
+
+[ext_resource type="Script" path="res://engine/character/gear_action/action.gd" id="1_nvup6"]
+[ext_resource type="Texture2D" path="res://assets/icons/modded/ssc-alts-1st-party/mt_weathering.png" id="2_7mho1"]
+[ext_resource type="Script" path="res://engine/character/gear_passive/passive.gd" id="2_xwkyw"]
+[ext_resource type="Script" path="res://engine/character/buff/buff.gd" id="3_7mho1"]
+[ext_resource type="Script" path="res://engine/character/unit/movement_type.gd" id="4_jae3v"]
+[ext_resource type="Script" path="res://engine/character/buff/archtypes/buff_movement_type.gd" id="5_swrs2"]
+[ext_resource type="Script" path="res://engine/character/gear_passive/passive_buff_applicator.gd" id="6_7tf51"]
+[ext_resource type="Script" path="res://engine/character/gear/kit.gd" id="7_p7oo4"]
+
+[sub_resource type="Resource" id="Resource_ffnpk"]
+script = ExtResource("4_jae3v")
+ignore_difficult = true
+metadata/_custom_type_script = "uid://udxarj3kb6nm"
+
+[sub_resource type="Resource" id="Resource_fmvp6"]
+script = ExtResource("5_swrs2")
+movement_type = SubResource("Resource_ffnpk")
+to = 15
+metadata/_custom_type_script = "uid://bw1bv7eturuo0"
+
+[sub_resource type="Resource" id="Resource_e8ly3"]
+script = ExtResource("6_7tf51")
+applied_buffs = Array[ExtResource("3_7mho1")]([SubResource("Resource_fmvp6")])
+metadata/_custom_type_script = "uid://dy4kg537rc55e"
+
+[resource]
+script = ExtResource("7_p7oo4")
+passives = Array[ExtResource("2_xwkyw")]([SubResource("Resource_e8ly3")])
+is_trait = true
+icon_override = ExtResource("2_7mho1")
+metadata/_custom_type_script = "uid://ckrv6mvs5q65e"

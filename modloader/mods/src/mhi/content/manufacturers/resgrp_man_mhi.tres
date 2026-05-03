@@ -1,0 +1,11 @@
+[gd_resource type="Resource" script_class="ResourceGroup" load_steps=2 format=3 uid="uid://dlire4q3tq0x3"]
+
+[ext_resource type="Script" uid="uid://b7vg87rxnqv28" path="res://addons/godot_resource_groups/resource_group.gd" id="1_qvdv5"]
+
+[resource]
+script = ExtResource("1_qvdv5")
+base_folder = "res://content"
+includes = Array[String](["**/mhi/**.tres"])
+excludes = Array[String](["**/buff_**.tres", "**/action_**.tres"])
+paths = Array[String](["res://content/frames/mhi/mf_wyrm/cp_flux_pinned_radiators/cp_flux_pinned_radiators.tres", "res://content/frames/mhi/mf_wyrm/mf_wyrm.tres", "res://content/frames/mhi/mf_wyrm/mt_convective_heat_transfer/movementtype_convective_heat_transfer.tres", "res://content/frames/mhi/mf_wyrm/mt_convective_heat_transfer/mt_convective_heat_transfer.tres", "res://content/frames/mhi/mf_wyrm/mt_spontaneous_immolation/mt_spontaneous_immolation.tres", "res://content/gear/mhi/systems/ms_ancalagon_nhp/ms_ancalagon_nhp.tres", "res://content/gear/mhi/systems/ms_compulsion_induction_suite/movementtype_foolish_urge.tres", "res://content/gear/mhi/systems/ms_compulsion_induction_suite/ms_compulsion_induction_suite.tres", "res://content/gear/mhi/systems/ms_scatter_drone/dep_scatter_drone.tres", "res://content/gear/mhi/systems/ms_scatter_drone/ms_scatter_drone.tres", "res://content/gear/mhi/systems/wm_tightbeam_mod/passive_tightbeam_mod.tres", "res://content/gear/mhi/systems/wm_tightbeam_mod/wm_tightbeam_mod.tres", "res://content/gear/mhi/weapons/mw_concentrated_neutrino_beam.tres", "res://content/gear/mhi/weapons/mw_dagorath_lance/mw_dagorath_lance.tres", "res://content/licenses/mhi/li_wyrm.tres"])
+metadata/_custom_type_script = "uid://b7vg87rxnqv28"

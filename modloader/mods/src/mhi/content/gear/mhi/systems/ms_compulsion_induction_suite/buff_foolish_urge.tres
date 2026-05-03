@@ -1,0 +1,17 @@
+[gd_resource type="Resource" load_steps=4 format=3]
+
+[ext_resource type="Resource" path="res://content/gear/mhi/systems/ms_compulsion_induction_suite/buff_foolish_urge_target.tres" id="1_gqraw"]
+[ext_resource type="Script" path="res://content/gear/mhi/systems/ms_compulsion_induction_suite/buff_foolish_urge.gd" id="2_10vtw"]
+[ext_resource type="Resource" path="res://content/gear/mhi/systems/ms_compulsion_induction_suite/movementtype_foolish_urge.tres" id="2_gatss"]
+
+[resource]
+script = ExtResource("2_10vtw")
+buff_foolish_urge_target = ExtResource("1_gqraw")
+puppet_movement_type = ExtResource("2_gatss")
+until = 1
+hide_from_player = true
+multiple_copies_can_stack = true
+triggers_on = Array[int]([14])
+trigger_timing = 0
+localization_key_override = "ms_compulsion_induction_suite.action_foolish_urge"
+metadata/_custom_type_script = "uid://cqrqkdgcf8mti"

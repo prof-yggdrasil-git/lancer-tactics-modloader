@@ -1,0 +1,13 @@
+[gd_resource type="Resource" load_steps=3 format=3]
+
+[ext_resource type="Script" path="res://content/frames/ssc/mf_orchis/mt_royal_guard/action_royal_guard.gd" id="1_eo2up"]
+[ext_resource type="Texture2D" path="res://assets/icons/modded/ssc-alts-1st-party/mt_royal_guard.png" id="1_tg2wo"]
+
+[resource]
+script = ExtResource("1_eo2up")
+triggers_on = Array[int]([0, 10, 12])
+trigger_timing = 0
+consumes_rxn = false
+icon_override = ExtResource("1_tg2wo")
+flavor_override = 2
+metadata/_custom_type_script = "uid://crqxmv8pxyk6g"

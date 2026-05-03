@@ -1,0 +1,12 @@
+[gd_resource type="Resource" script_class="Kit" load_steps=5 format=3]
+
+[ext_resource type="Script" path="res://engine/character/gear_action/action.gd" id="1_wjngn"]
+[ext_resource type="Script" path="res://engine/character/gear_passive/passive.gd" id="2_c5wqw"]
+[ext_resource type="Resource" path="res://content/frames/ssc/mf_viceroy/mt_vigilante_omnidirectional_launchers/action_vigilante_omnidirectional_launchers.tres" id="2_dcfd3"]
+[ext_resource type="Script" path="res://engine/character/gear/kit.gd" id="3_dcfd3"]
+
+[resource]
+script = ExtResource("3_dcfd3")
+actions = Array[ExtResource("1_wjngn")]([ExtResource("2_dcfd3")])
+is_trait = true
+metadata/_custom_type_script = "uid://ckrv6mvs5q65e"

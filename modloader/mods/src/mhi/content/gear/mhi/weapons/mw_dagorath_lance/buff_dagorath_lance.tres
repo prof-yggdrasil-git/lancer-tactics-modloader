@@ -1,0 +1,11 @@
+[gd_resource type="Resource" load_steps=3 format=3]
+
+[ext_resource type="Script" path="res://content/gear/mhi/weapons/mw_dagorath_lance/buff_dagorath_lance.gd" id="1_elwfc"]
+[ext_resource type="Texture2D" path="res://assets/icons/modded/mhi/buff_dagorath_lance.png" id="1_ggiko"]
+
+[resource]
+script = ExtResource("1_elwfc")
+applies_statuses = Array[int]([2])
+triggers_on = Array[int]([10, 20])
+icon = ExtResource("1_ggiko")
+metadata/_custom_type_script = "uid://cqrqkdgcf8mti"

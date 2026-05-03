@@ -1,0 +1,38 @@
+[gd_resource type="Resource" script_class="UnlockTree" load_steps=16 format=3]
+
+[ext_resource type="Texture2D" path="res://assets/units/pc/mhi_wyrm.png" id="1_e00tr"]
+[ext_resource type="Script" path="res://engine/character/unit_core/frame.gd" id="2_e00tr"]
+[ext_resource type="Script" path="res://engine/character/gear/kit.gd" id="3_p3c2p"]
+[ext_resource type="Script" path="res://engine/character/unit_core/unlock_rank.gd" id="4"]
+[ext_resource type="Resource" path="res://content/frames/mhi/mf_wyrm/mf_wyrm.tres" id="5_8xkfe"]
+[ext_resource type="Resource" path="res://content/gear/mhi/systems/ms_compulsion_induction_suite/ms_compulsion_induction_suite.tres" id="5_lfpar"]
+[ext_resource type="Resource" path="res://content/gear/mhi/weapons/mw_concentrated_neutrino_beam.tres" id="6_worjx"]
+[ext_resource type="Resource" path="res://content/gear/mhi/systems/wm_tightbeam_mod/wm_tightbeam_mod.tres" id="8_w2jhc"]
+[ext_resource type="Resource" path="res://content/gear/mhi/systems/ms_scatter_drone/ms_scatter_drone.tres" id="9_8oupo"]
+[ext_resource type="Script" path="res://engine/character/unit_core/unlock_tree.gd" id="10"]
+[ext_resource type="Resource" path="res://content/gear/mhi/weapons/mw_dagorath_lance/mw_dagorath_lance.tres" id="10_d6qn4"]
+[ext_resource type="Resource" path="res://content/gear/mhi/systems/ms_ancalagon_nhp/ms_ancalagon_nhp.tres" id="11_e00tr"]
+
+[sub_resource type="Resource" id="Resource_p2sw5"]
+script = ExtResource("4")
+granted_gear = Array[ExtResource("3_p3c2p")]([ExtResource("6_worjx"), ExtResource("5_lfpar")])
+metadata/_custom_type_script = "uid://ctb1pfqlfgmni"
+
+[sub_resource type="Resource" id="Resource_86v15"]
+script = ExtResource("4")
+granted_gear = Array[ExtResource("3_p3c2p")]([ExtResource("8_w2jhc"), ExtResource("9_8oupo")])
+granted_frames = Array[ExtResource("2_e00tr")]([ExtResource("5_8xkfe")])
+metadata/_custom_type_script = "uid://ctb1pfqlfgmni"
+
+[sub_resource type="Resource" id="Resource_mwv5i"]
+script = ExtResource("4")
+granted_gear = Array[ExtResource("3_p3c2p")]([ExtResource("10_d6qn4"), ExtResource("11_e00tr")])
+metadata/_custom_type_script = "uid://ctb1pfqlfgmni"
+
+[resource]
+script = ExtResource("10")
+icon = ExtResource("1_e00tr")
+rank_1 = SubResource("Resource_p2sw5")
+rank_2 = SubResource("Resource_86v15")
+rank_3 = SubResource("Resource_mwv5i")
+metadata/_custom_type_script = "uid://dq0jowvw37x6i"

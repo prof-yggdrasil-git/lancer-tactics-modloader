@@ -1,0 +1,11 @@
+[gd_resource type="Resource" script_class="Manufacturer" load_steps=4 format=3]
+
+[ext_resource type="Texture2D" path="res://assets/faction_logos/mhi.svg" id="1_0sohp"]
+[ext_resource type="Resource" path="res://content/manufacturers/resgrp_man_mhi.tres" id="2_0sohp"]
+[ext_resource type="Script" path="res://engine/character/unit_core/manufacturer.gd" id="3_ooe0n"]
+
+[resource]
+script = ExtResource("3_ooe0n")
+icon = ExtResource("1_0sohp")
+color = Color(0.85882354, 0.49411765, 0.101960786, 1)
+resource_group = ExtResource("2_0sohp")

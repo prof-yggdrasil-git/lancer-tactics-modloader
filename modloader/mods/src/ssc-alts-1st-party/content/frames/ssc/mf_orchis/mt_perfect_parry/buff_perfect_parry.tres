@@ -1,0 +1,13 @@
+[gd_resource type="Resource" load_steps=4 format=3]
+
+[ext_resource type="Resource" path="res://content/frames/ssc/mf_orchis/mt_perfect_parry/buff_perfect_parry_post.tres" id="1_g1rvf"]
+[ext_resource type="Texture2D" path="res://assets/icons/modded/ssc-alts-1st-party/buff_perfect_parry.png" id="2_fl0i3"]
+[ext_resource type="Script" path="res://content/frames/ssc/mf_orchis/mt_perfect_parry/buff_perfect_parry.gd" id="2_upgyf"]
+
+[resource]
+script = ExtResource("2_upgyf")
+buff = ExtResource("1_g1rvf")
+triggers_on = Array[int]([2])
+trigger_timing = 0
+icon = ExtResource("2_fl0i3")
+metadata/_custom_type_script = "uid://cqrqkdgcf8mti"

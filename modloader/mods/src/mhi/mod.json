@@ -1,0 +1,80 @@
+{
+    "name": "Mikaze Heavy Industries",
+    "author": "GavstarB",
+    "version": "1.0",
+    "resource_groups": {
+        "res://engine/resource_groups/resgrp_buffs.tres": [
+            "res://content/frames/mhi/mf_wyrm/cp_flux_pinned_radiators/buff_overload_coolant_loop.tres",
+            "res://content/gear/mhi/systems/ms_compulsion_induction_suite/buff_foolish_urge.tres",
+            "res://content/gear/mhi/systems/ms_compulsion_induction_suite/buff_foolish_urge_target.tres",
+            "res://content/gear/mhi/systems/ms_compulsion_induction_suite/buff_sudden_anger.tres",
+            "res://content/gear/mhi/systems/ms_compulsion_induction_suite/buff_sudden_anger_target.tres",
+            "res://content/gear/mhi/systems/wm_tightbeam_mod/buff_tightbeam_mod.tres",
+            "res://content/gear/mhi/weapons/mw_dagorath_lance/buff_dagorath_lance.tres",
+            "res://content/gear/mhi/weapons/mw_dagorath_lance/buff_dagorath_lance_no_clear_heat.tres",
+            "res://content/gear/mhi/systems/ms_ancalagon_nhp/buff_ancalagon_nhp.tres"
+        ],
+        "res://engine/resource_groups/resgrp_frames.tres": [
+            "res://content/frames/mhi/mf_wyrm/mf_wyrm.tres",
+            "res://content/gear/mhi/systems/ms_scatter_drone/dep_scatter_drone.tres"
+        ],
+        "res://engine/resource_groups/resgrp_kits.tres": [
+            "res://content/frames/mhi/mf_wyrm/cp_flux_pinned_radiators/cp_flux_pinned_radiators.tres",
+            "res://content/frames/mhi/mf_wyrm/mt_convective_heat_transfer/mt_convective_heat_transfer.tres",
+            "res://content/frames/mhi/mf_wyrm/mt_spontaneous_immolation/mt_spontaneous_immolation.tres",
+            "res://content/gear/mhi/systems/ms_compulsion_induction_suite/ms_compulsion_induction_suite.tres",
+            "res://content/gear/mhi/weapons/mw_concentrated_neutrino_beam.tres",
+            "res://content/gear/mhi/systems/wm_tightbeam_mod/wm_tightbeam_mod.tres",
+            "res://content/gear/mhi/systems/ms_scatter_drone/ms_scatter_drone.tres",
+            "res://content/gear/mhi/weapons/mw_dagorath_lance/mw_dagorath_lance.tres",
+            "res://content/gear/mhi/systems/ms_ancalagon_nhp/ms_ancalagon_nhp.tres"
+        ],
+        "res://engine/resource_groups/resgrp_licenses.tres": [
+            "res://content/licenses/mhi/li_wyrm.tres"
+        ],
+        "res://engine/resource_groups/resgrp_manufacturers.tres": [
+            "res://content/manufacturers/man_mhi.tres"
+        ]
+    },
+    "translate": {
+        "en": {
+            "lancer.man.mhi": "Mikaze Heavy Industries",
+            "lancer.man.mhi.short": "MHI",
+            "frame.mf_wyrm.name": "Wyrm",
+            "frame.mf_wyrm.flavor": "The Wyrm is the flagship product of Mikaze Heavy Industries, a small Calliope-based mech manufacturer founded by a pair of ex-employees from SSC's Exotic Materials department. By using its unique ferrofluid droplet-based radiators, the Wyrm specialises in mounting large, high-heat weaponry deemed impractical for usage on other mechs.",
+            "frame.mf_wyrm.flavor.short": "Self-Heat Specialist",
+            "gear.cp_flux_pinned_radiators.name": "Flux-Pinned Radiators",
+            "gear.cp_flux_pinned_radiators.effect": "Utilising cutting-edge high-temperature ferrofluids, the Wyrm's 'wings' extrude a membrane of magnetically pinned radiative droplets which allow the efficient dispersal of waste heat.",
+            "gear.cp_flux_pinned_radiators.action_radiative_cooling.name": "Radiative Cooling",
+            "gear.cp_flux_pinned_radiators.action_radiative_cooling.effect": "1/turn when the Wyrm has moved a total of 3 or more spaces, it clears |1 heat| and |1 burn|. Involuntary movement counts towards this ability, but movement due to the Wyrm's prepare action |reaction| does not. A teleport always counts as moving 1 space, no matter the distance.",
+            "gear.cp_flux_pinned_radiators.action_radiative_cooling.clear_burn.pop": "Cleared {amount} burn",
+            "gear.cp_flux_pinned_radiators.action_radiative_cooling.clear_burn.log": "{unit} cleared {amount} burn.",
+            "gear.cp_flux_pinned_radiators.action_redline_dispersion.name": "Redline Dispersion",
+            "gear.cp_flux_pinned_radiators.action_redline_dispersion.effect": "As a |free action| on the Wyrm's first turn of a scene, the Wyrm gains the [b]Overload Coolant Loop[/b] |reaction|, which it may take once before the end of the scene. This ability is |efficient| and will refund |1 CP| at the end of any scene in which this ability was used.",
+            "gear.cp_flux_pinned_radiators.action_overload_coolant_loop.name": "Overload Coolant Loop",
+            "gear.cp_flux_pinned_radiators.action_overload_coolant_loop.effect": "1/scene when the Wyrm takes |heat| which would cause it to take |stress| from one of its weapons, systems, or an external source, the Wyrm instead takes exactly the amount of |heat| needed to fill its |heat cap|, then gains |immunity| to |heat| for the remainder of the current action.",
+            "gear.mt_convective_heat_transfer.name": "Convective Heat Transfer",
+            "gear.mt_convective_heat_transfer.effect": "When the Wyrm clears all |heat|, it immediately moves spaces equal to half the amount of |heat| cleared (or the maximum spaces possible if it is unable) in a direction of its choice. This movement is involuntary, ignores |engagement|, and doesn’t provoke |reactions|.",
+            "gear.mt_spontaneous_immolation.name": "Spontaneous Immolation",
+            "gear.mt_spontaneous_immolation.effect": "If the Wyrm does not move at least 3 spaces on its turn, it takes |6 burn| at the start of the next turn. This trait does not apply while the Wyrm is |shut down|.",
+            "gear.mw_concentrated_neutrino_beam.name": "Concentrated Neutrino Beam",
+            "gear.ms_compulsion_induction_suite.name": "Compulsion Induction Suite",
+            "gear.ms_compulsion_induction_suite.action_foolish_urge.name": "Foolish Urge",
+            "gear.ms_compulsion_induction_suite.action_foolish_urge.effect": "Your target's control system becomes infested by a logic bomb which triggers the next time you make a |line| or |cone| attack. Immediately before the attack, as a |reaction|, the target moves up to their |speed| on a path of their choice into, or as close to the area of effect as they can get. This movement is involuntary, but provokes |reactions| and |engagement| as normal and doesn’t count as |knockback|, pushing, or pulling. An untriggered logic bomb is lost at the end of your next turn.",
+            "gear.ms_compulsion_induction_suite.action_sudden_anger.name": "Sudden Anger",
+            "gear.ms_compulsion_induction_suite.action_sudden_anger.effect": "Your target's control system is infested with a logic bomb which causes it to treat all characters, including allies, as enemies for the purposes of |overwatch|. The next time any character triggers the target's |overwatch|, the logic bomb is triggered and the target must take the |overwatch| |reaction| against that character. An untriggered logic bomb is lost at the end of your next turn.",
+            "gear.wm_tightbeam_mod.name": "Tightbeam Mod",
+            "gear.wm_tightbeam_mod.effect": "The weapon this mod is applied to gains +5 distance to its |line| attacks and generates an additional |2 heat|.",
+            "gear.ms_scatter_drone.name": "Scatter Drone",
+            "gear.ms_scatter_drone.effect": "Expend a charge to deploy a scatter drone to a free space within |sensors| and line of sight. Scatter drones cannot be recalled and expire at the end of the scene. \nWhen a |line| attack would intersect with the space occupied by the scatter drone, the length of the |line| is shortened to only the number of squares needed to reach the drone. Instead, the drone is destroyed and a |blast 2| area around its former position is considered to be part of the attack's area of effect. Line of sight and |cover| for this |blast 2| area are calculated from the drone's former position. \nThe scatter drone can be moved to any point within |sensors| as a |quick action|. It cannot be recalled and expires at the end of the scene.",
+            "frame.dep_scatter_drone.name": "Scatter Drone",
+            "event.scatter_drone_explode.log": "{unit} detonated!",
+            "gear.mw_dagorath_lance.name": "Dagorath Lance",
+            "gear.mw_dagorath_lance.effect": "You must charge the dagorath lance as a |quick action| before it can be fired. While this weapon is charged, you are |slowed|, your |speed| is reduced to 1 and you cannot lose |heat| by any means except overheating. The dagorath lance may be used with |skirmish|. This weapon loses its charge when you fire it. \nThis weapon automatically deals |20| |AP| |energy| damage to all cover, terrain, and objects in its area. Any character in the area which is in line of sight after this damage is resolved is considered to be in line of sight for the attack. Characters not within line of sight before the attack have |hard cover| against it.",
+            "gear.mw_dagorath_lance.action_charge_dagorath_lance.name": "Charge Dagorath Lance",
+            "gear.mw_dagorath_lance.action_charge_dagorath_lance.effect": "The dagorath lance becomes charged, and can be fired. While the dagorath lance is charged, you are |slowed|, your |speed| is reduced to 1 and you cannot lose |heat| by any means except overheating.",
+            "gear.ms_ancalagon_nhp.name": "ANCALAGON-Class NHP",
+            "gear.ms_ancalagon_nhp.effect": "1/turn until the start of your next turn, when you make an attack with a weapon which has the |ordnance| tag, you may expend a charge to treat the weapon as if it does not have the tag."
+        }
+    }
+}

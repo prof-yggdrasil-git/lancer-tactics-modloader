@@ -1,0 +1,222 @@
+{
+    "name": "First-Party SSC Alt Frames",
+    "author": "GavstarB",
+    "version": "1.0",
+    "resource_groups": {
+        "res://engine/resource_groups/resgrp_buffs.tres": [
+            "res://content/frames/ssc/mf_amber_phantom/cp_possibility_mapping/possibility_mapping/buff_possibility_mapping.tres",
+            "res://content/frames/ssc/mf_amber_phantom/mt_hyperawareness/buff_hyperawareness_attack.tres",
+            "res://content/frames/ssc/mf_amber_phantom/mt_hyperawareness/buff_hyperawareness_save.tres",
+            "res://content/frames/ssc/mf_orchis/cp_helion/buff_helion_autohit.tres",
+            "res://content/frames/ssc/mf_orchis/cp_helion/buff_hunting_eagle_target.tres",
+            "res://content/frames/ssc/mf_orchis/mt_perfect_parry/buff_perfect_parry.tres",
+            "res://content/frames/ssc/mf_orchis/mt_perfect_parry/buff_perfect_parry_post.tres",
+            "res://content/frames/ssc/mf_swallowtail_ranger/cp_gaia_inheritance/buff_grounded.tres",
+            "res://content/frames/ssc/mf_swallowtail_ranger/cp_gaia_inheritance/buff_grounded_invisibility.tres",
+            "res://content/frames/ssc/mf_swallowtail_ranger/cp_gaia_inheritance/buff_guerrilla_warfare.tres"
+        ],
+        "res://engine/resource_groups/resgrp_frames.tres": [
+            "res://content/frames/ssc/mf_amber_phantom/mf_amber_phantom.tres",
+            "res://content/frames/ssc/mf_orchis/mf_black_witch_alt_orchidea.tres",
+            "res://content/frames/ssc/mf_swallowtail_ranger/cp_gaia_inheritance/deployable/dep_gi_soft_cover.tres",
+            "res://content/frames/ssc/mf_swallowtail_ranger/mt_scout_battlefield/deployable/dep_sb_difficult_terrain.tres",
+            "res://content/frames/ssc/mf_swallowtail_ranger/mt_scout_battlefield/deployable/dep_sb_soft_cover.tres",
+            "res://content/frames/ssc/mf_swallowtail_ranger/mf_swallowtail_alt_swallowtail_ranger_variant.tres",
+            "res://content/frames/ssc/mf_viceroy/mf_micro_monarch.tres"
+        ],
+        "res://engine/resource_groups/resgrp_kits.tres": [
+            "res://content/frames/ssc/mf_amber_phantom/cp_possibility_mapping/cp_possibility_mapping.tres",
+            "res://content/frames/ssc/mf_amber_phantom/mt_battle_oracle/mt_battle_oracle.tres",
+            "res://content/frames/ssc/mf_amber_phantom/mt_hyperawareness/mt_hyperawareness.tres",
+            "res://content/frames/ssc/mf_orchis/cp_helion/cp_helion.tres",
+            "res://content/frames/ssc/mf_orchis/mt_perfect_parry/mt_perfect_parry.tres",
+            "res://content/frames/ssc/mf_orchis/mt_royal_guard/mt_royal_guard.tres",
+            "res://content/frames/ssc/mf_swallowtail_ranger/cp_gaia_inheritance/deployable/mt_gi_soft_cover.tres",
+            "res://content/frames/ssc/mf_swallowtail_ranger/cp_gaia_inheritance/cp_gaia_inheritance.tres",
+            "res://content/frames/ssc/mf_swallowtail_ranger/mt_invigorating_scanners/mt_invigorating_scanners.tres",
+            "res://content/frames/ssc/mf_swallowtail_ranger/mt_scout_battlefield/deployable/mt_sb_difficult_terrain.tres",
+            "res://content/frames/ssc/mf_swallowtail_ranger/mt_scout_battlefield/deployable/mt_sb_soft_cover.tres",
+            "res://content/frames/ssc/mf_swallowtail_ranger/mt_scout_battlefield/mt_scout_battlefield.tres",
+            "res://content/frames/ssc/mf_swallowtail_ranger/mt_weathering.tres",
+            "res://content/frames/ssc/mf_viceroy/cp_tengu_assisted_missile_tubes/cp_tengu_assisted_missile_tubes.tres",
+            "res://content/frames/ssc/mf_viceroy/mt_near_threat_targeting_processor/mt_near_threat_targeting_processor.tres",
+            "res://content/frames/ssc/mf_viceroy/mt_vigilante_omnidirectional_launchers/mt_vigilante_omnidirectional_launchers.tres",
+            "res://content/frames/ssc/mf_viceroy/mt_pressure_plating_viceroy.tres"
+        ],
+        "res://content/manufacturers/resgrp_man_ssc.tres": [
+            "res://content/frames/ssc/mf_amber_phantom/cp_possibility_mapping/possibility_mapping/buff_possibility_mapping.tres",
+            "res://content/frames/ssc/mf_amber_phantom/mt_hyperawareness/buff_hyperawareness_attack.tres",
+            "res://content/frames/ssc/mf_amber_phantom/mt_hyperawareness/buff_hyperawareness_save.tres",
+            "res://content/frames/ssc/mf_orchis/cp_helion/buff_helion_autohit.tres",
+            "res://content/frames/ssc/mf_orchis/cp_helion/buff_hunting_eagle_target.tres",
+            "res://content/frames/ssc/mf_orchis/mt_perfect_parry/buff_perfect_parry.tres",
+            "res://content/frames/ssc/mf_orchis/mt_perfect_parry/buff_perfect_parry_post.tres",
+            "res://content/frames/ssc/mf_swallowtail_ranger/cp_gaia_inheritance/buff_grounded.tres",
+            "res://content/frames/ssc/mf_swallowtail_ranger/cp_gaia_inheritance/buff_grounded_invisibility.tres",
+            "res://content/frames/ssc/mf_swallowtail_ranger/cp_gaia_inheritance/buff_guerrilla_warfare.tres",
+            "res://content/frames/ssc/mf_amber_phantom/mf_amber_phantom.tres",
+            "res://content/frames/ssc/mf_orchis/mf_black_witch_alt_orchidea.tres",
+            "res://content/frames/ssc/mf_swallowtail_ranger/cp_gaia_inheritance/deployable/dep_gi_soft_cover.tres",
+            "res://content/frames/ssc/mf_swallowtail_ranger/mt_scout_battlefield/deployable/dep_sb_difficult_terrain.tres",
+            "res://content/frames/ssc/mf_swallowtail_ranger/mt_scout_battlefield/deployable/dep_sb_soft_cover.tres",
+            "res://content/frames/ssc/mf_swallowtail_ranger/mf_swallowtail_alt_swallowtail_ranger_variant.tres",
+            "res://content/frames/ssc/mf_viceroy/mf_micro_monarch.tres",
+            "res://content/frames/ssc/mf_amber_phantom/cp_possibility_mapping/cp_possibility_mapping.tres",
+            "res://content/frames/ssc/mf_amber_phantom/mt_battle_oracle/mt_battle_oracle.tres",
+            "res://content/frames/ssc/mf_amber_phantom/mt_hyperawareness/mt_hyperawareness.tres",
+            "res://content/frames/ssc/mf_orchis/cp_helion/cp_helion.tres",
+            "res://content/frames/ssc/mf_orchis/mt_perfect_parry/mt_perfect_parry.tres",
+            "res://content/frames/ssc/mf_orchis/mt_royal_guard/mt_royal_guard.tres",
+            "res://content/frames/ssc/mf_swallowtail_ranger/cp_gaia_inheritance/deployable/mt_gi_soft_cover.tres",
+            "res://content/frames/ssc/mf_swallowtail_ranger/cp_gaia_inheritance/cp_gaia_inheritance.tres",
+            "res://content/frames/ssc/mf_swallowtail_ranger/mt_invigorating_scanners/mt_invigorating_scanners.tres",
+            "res://content/frames/ssc/mf_swallowtail_ranger/mt_scout_battlefield/deployable/mt_sb_difficult_terrain.tres",
+            "res://content/frames/ssc/mf_swallowtail_ranger/mt_scout_battlefield/deployable/mt_sb_soft_cover.tres",
+            "res://content/frames/ssc/mf_swallowtail_ranger/mt_scout_battlefield/mt_scout_battlefield.tres",
+            "res://content/frames/ssc/mf_swallowtail_ranger/mt_weathering.tres",
+            "res://content/frames/ssc/mf_viceroy/cp_tengu_assisted_missile_tubes/cp_tengu_assisted_missile_tubes.tres",
+            "res://content/frames/ssc/mf_viceroy/mt_near_threat_targeting_processor/mt_near_threat_targeting_processor.tres",
+            "res://content/frames/ssc/mf_viceroy/mt_vigilante_omnidirectional_launchers/mt_vigilante_omnidirectional_launchers.tres",
+            "res://content/frames/ssc/mf_viceroy/mt_pressure_plating_viceroy.tres"
+        ]
+    },
+    "licenses": {
+        "res://content/licenses/ssc/li_black_witch.tres": {
+            "rank_1": {
+                "gear": [],
+                "frames": []
+            },
+            "rank_2": {
+                "gear": [],
+                "frames": [
+                    "res://content/frames/ssc/mf_orchis/mf_black_witch_alt_orchidea.tres"
+                ]
+            },
+            "rank_3": {
+                "gear": [],
+                "frames": []
+            }
+        },
+        "res://content/licenses/ssc/li_metalmark.tres": {
+            "rank_1": {
+                "gear": [],
+                "frames": []
+            },
+            "rank_2": {
+                "gear": [],
+                "frames": [
+                    "res://content/frames/ssc/mf_amber_phantom/mf_amber_phantom.tres"
+                ]
+            },
+            "rank_3": {
+                "gear": [],
+                "frames": []
+            }
+        },
+        "res://content/licenses/ssc/li_monarch.tres": {
+            "rank_1": {
+                "gear": [],
+                "frames": []
+            },
+            "rank_2": {
+                "gear": [],
+                "frames": [
+                    "res://content/frames/ssc/mf_viceroy/mf_micro_monarch.tres"
+                ]
+            },
+            "rank_3": {
+                "gear": [],
+                "frames": []
+            }
+        },
+        "res://content/licenses/ssc/li_swallowtail.tres": {
+            "rank_1": {
+                "gear": [],
+                "frames": []
+            },
+            "rank_2": {
+                "gear": [],
+                "frames": [
+                    "res://content/frames/ssc/mf_swallowtail_ranger/mf_swallowtail_alt_swallowtail_ranger_variant.tres"
+                ]
+            },
+            "rank_3": {
+                "gear": [],
+                "frames": []
+            }
+        }
+    },
+    "textures": {
+        "res://content/frames/ssc/mf_swallowtail/mf_swallowtail.tres": [
+            "res://assets/units/pc/ssc_swallowtail_ranger.png"
+        ]
+    },
+    "translate": {
+        "en": {
+            "frame.mf_swallowtail_alt_swallowtail_ranger_variant.name": "Swallowtail (Ranger Variant)",
+            "frame.mf_swallowtail_alt_swallowtail_ranger_variant.flavor": "This Swallowtail variant is common among HUC ranger forces. It was adopted and reverse-engineered from the material remains of early, abandoned SSC survey expeditions. With no ability to print-replicate the mech, the rangers painstakingly manufactured and assembled each unit to high specifications. Unlike the sleek luxury of other SSC frames, this Swallowtail is a rugged affair. Each one has a suite of marks left by its previous owners – livery, battle paint, custom gear, camouflage, and weathering. They have been repaired and maintained for two generations and each one is precious to the United Cities.",
+            "frame.mf_swallowtail_alt_swallowtail_ranger_variant.flavor.short": "The Guerrilla",
+            "gear.cp_gaia_inheritance.name": "Gaia Inheritance",
+            "gear.cp_gaia_inheritance.action_grounded.name": "Grounded",
+            "gear.cp_gaia_inheritance.action_grounded.effect": "When you end your turn in a zone that grants |soft cover|, you become |invisible| until you leave that cover, take damage, attack, force a |save|, or take any other hostile action that affects another character.",
+            "gear.cp_gaia_inheritance.action_guerrilla_warfare.name": "Guerrilla Warfare",
+            "gear.cp_gaia_inheritance.action_guerrilla_warfare.effect": "You create three |burst 1| patches of smoke in spaces within line of sight and |range 5|. These patches grant |soft cover| to characters at least partly within them. They last for the rest of the scene.\n\nAdditionally, for the rest of the scene, allied characters within |sensors| gain the benefits of [b]Grounded[/b].",
+            "gear.mt_scout_battlefield.name": "Scout Battlefield",
+            "gear.mt_scout_battlefield.effect": "Before the first round of any combat, place up to two of the following in free spaces anywhere on the battlefield:\n\n- A 2 x 2 zone that does not impede movement and grants |soft cover| to characters at least partly within it.\n- A 2 x 2 zone that is |difficult terrain|.\n- A |size 1| piece of |hard cover|.\n\nThey can’t be placed within 4 spaces of each other. The same option can be chosen more than once.",
+            "gear.mt_scout_battlefield.action_deploy_soft_cover.name": "Deploy Soft Cover",
+            "gear.mt_scout_battlefield.action_deploy_soft_cover.effect": "Deploy a 2 x 2 zone that does not impede movement and grants |soft cover| to characters at least partly within it.",
+            "gear.mt_scout_battlefield.action_deploy_difficult_terrain.name": "Deploy Difficult Terrain",
+            "gear.mt_scout_battlefield.action_deploy_difficult_terrain.effect": "Deploy a 2 x 2 zone that is |difficult terrain|.",
+            "gear.mt_scout_battlefield.action_deploy_hard_cover.name": "Deploy Hard Cover",
+            "gear.mt_scout_battlefield.action_deploy_hard_cover.effect": "Deploy a |size 1| piece of |hard cover|.",
+            "gear.mt_scout_battlefield.choose": "Choose Terrain Effect",
+            "gear.mt_invigorating_scanners.name": "Invigorating Scanners",
+            "gear.mt_invigorating_scanners.effect": "1/round when the Swallowtail inflicts |lock on|, an allied character in its |sensor range| and line of sight can move up to its |speed| as a |reaction|.",
+            "gear.mt_weathering.name": "Weathering",
+            "gear.mt_weathering.effect": "The Swallowtail ignores |difficult terrain|.",
+            "frame.mf_micro_monarch.name": "Viceroy",
+            "frame.mf_micro_monarch.flavor": "An offshoot from SSC’s Bella Ciao line, the Viceroy is the result of rigorous field-testing in pursuit of a more accessible version of its larger sibling, the ever-ubiquitous Monarch. Originally developed under the moniker “MicroMonarch”, the scaled-down frame is nevertheless a force to be reckoned with and sports the high-quality engineering expected from all SSC mechs. Where the Monarch focuses on devastating long-range firepower, the Viceroy is more akin to a close-range brawler, using its sophisticated near-threat targeting arrays to wield the launchers of its sibling with deadly precision.\n\nEquipped with a scaled-down version of the Monarch’s own SSC-30 High-Penetration Missile System, the Viceroy is more than capable of saturating an area around itself with relatively small but high-yield warheads, aimed with pinpoint accuracy.\n\nThis, coupled with an integrated, one-use burst jump pack, turns the Viceroy into a potent shock trooper with devastating first-strike capabilities. This role is supported by its ability to shrug off any potential self-inflicted harm from any “shock and awe” maneuvers thanks to its advanced blast-resistant armor plating.\n\nSince its recent official release, the Viceroy has become – by SSC standards – an affordable frame that is now being widely rolled out to various SSC associates and subsidiaries. Slated to be approved for mass production, it is anticipated the Viceroy will become a frontline “soldier” mech to ultimately rival the likes of Harrison Armory’s Sherman.",
+            "frame.mf_micro_monarch.flavor.short": "Rocket Man",
+            "gear.cp_tengu_assisted_missile_tubes.name": "SSC-41 Tengu-Assisted Missile Tubes",
+            "gear.cp_tengu_assisted_missile_tubes.action_heavens_downpour.name": "Heaven's Downpour",
+            "gear.cp_tengu_assisted_missile_tubes.action_heavens_downpour.effect": "Center a |burst 3| missile swarm on yourself. Hostile characters in the area must succeed on a |hull| |save| or take |1d6+3| |explosive| damage and be knocked |prone|. On a successful |save| they take half damage and remain standing. You may consume an affected character’s |lock on| to make them automatically fail the |save|.\n\nBefore or after taking this action you may |fly| up to your |speed|, ignoring |engagement| and |reactions|. You must end this movement on solid ground or begin falling.",
+            "gear.cp_tengu_assisted_missile_tubes.action_heavens_downpour.choose": "Use Movement Now?",
+            "gear.cp_tengu_assisted_missile_tubes.action_heavens_downpour.choose.effect": "Before or after taking this action you may |fly| up to your |speed|, ignoring |engagement| and |reactions|. You must end this movement on solid ground or begin falling.",
+            "gear.mt_near_threat_targeting_processor.name": "Near-Threat Targeting Processor",
+            "gear.mt_near_threat_targeting_processor.effect": "The Viceroy treats its |launcher| weapons as though they are also |CQB| weapons with |threat 3|.",
+            "gear.mt_vigilante_omnidirectional_launchers.name": "Vigilante Omnidirectional Launchers",
+            "gear.mt_vigilante_omnidirectional_launchers.effect": "1/Round, on a |critical hit| against a character, the Viceroy may immediately deal |2 explosive| damage to all characters of its choice within |range 3| of itself and knock them back 1 space.",
+            "gear.mt_pressure_plating_viceroy.name": "Pressure Plating",
+            "gear.mt_pressure_plating_viceroy.effect": "The Viceroy has |resistance| to |explosive| damage.",
+            "frame.mf_amber_phantom.name": "Amber Phantom",
+            "frame.mf_amber_phantom.flavor": "Created as an advanced strike chassis for SSC's INSIGHT ORDINAL next-generation weapons evaluation program, the Amber Phantom represents the culmination of numerous technologies developed under the BELLA CIAO line into a single hyperspec, high-performance frame. Based primarily upon the Metalmark platform, the Amber Phantom incorporates an advanced neural bridge derived from the Death's Head's precognitive targeting system in conjunction with TACSIM choral processors in order to amplify the pilot's situational awareness to beyond-human levels.\n\nThe result of this synergy is an uncanny level of mind/machine-integrated performance akin to seeing into the future. Amber Phantom pilots appear to casually sidestep incoming fire, and their attacks are perfectly timed to intersect enemy positions without any wasted movement. This system is not without its drawbacks; extended use of the neural bridge is said to result in feelings of intense déjà vu, temporal dissociation, and dyschronometria, and pilots are strongly advised to maintain regular downtime rotation cycles and centering exercises in order to minimize these risks.\n\nNot currently in widespread distribution, the Amber Phantom has seen extensive use among Constellar special forces, and is also available to select SSC clients under a full-disclosure data sharing and promotional rights agreement.",
+            "frame.mf_amber_phantom.flavor.short": "Battle Oracle",
+            "gear.cp_possibility_mapping.name": "Possibility Mapping",
+            "gear.cp_possibility_mapping.action_possibility_mapping.name": "Possibility Mapping",
+            "gear.cp_possibility_mapping.action_possibility_mapping.effect": "At the start of each round, choose a point during the PC turn order to act (i.e. if there are three PCs, you can choose to act first, second, or third among them). 1/round, if you take your turn during that point, you may deal |+1d6 bonus damage| on hit with a |ranged| or |melee attack| against a target within |sensors|. If you take your turn at another point in the round, you may still gain this |bonus damage|, but you take |1d6 heat| when doing so.",
+            "gear.cp_possibility_mapping.dc_possibility_mapping": "Possibility Mapping Turn",
+            "gear.cp_possibility_mapping.turn": "Turn ",
+            "gear.cp_possibility_mapping.action_convergence_point.name": "Convergence Point",
+            "gear.cp_possibility_mapping.action_convergence_point.effect": "Choose one allied character that has not taken their turn this round. That character may take their turn either immediately after your turn ends, or they may take their turn now before you do anything else, pausing your own turn until their turn ends. If they choose to act now, they count as acting before you in the PC turn order. This ability is |efficient| and will refund |1 CP| at the end of any scene in which this ability was used.",
+            "gear.cp_possibility_mapping.now": "Take Ally Turn Now",
+            "gear.cp_possibility_mapping.later": "Take Ally Turn After",
+            "gear.mt_hyperawareness.name": "Hyperawareness",
+            "gear.mt_hyperawareness.effect": "At the start of each round, until the Amber Phantom takes its turn, all attacks against it are made with |+1 difficulty| and it makes all |saves| with |+1 accuracy|.",
+            "gear.mt_battle_oracle.name": "Battle Oracle",
+            "gear.mt_battle_oracle.effect": "1/round, when a hostile character misses the Amber Phantom with an attack, it may pull a character within |sensors| up to 2 spaces in any direction.",
+            "frame.mf_black_witch_alt_orchidea.name": "Orchis",
+            "frame.mf_black_witch_alt_orchidea.flavor": "The Orchis is the spear and shield of the house companies and makes up the bulk of the fighting forces in Baronic space. Its ubiquity does not bely its reliability and durability, nor its iconic status as the line mech of the baronies. Due to a trade negotiation with Smith-Shimano corpro, the Orchis is compatible with the Black Witch licensing scheme and can appropriate the majority of its gear and weaponry. Utilizing ancient and sturdy mag-lock technology, the Orchis wields a heavy Scuta shield, reinforced to deflect incoming fire. This shield can be locked in place and braced against another shield of its own kind, creating a tessellated wall of impenetrable strength. The half-mile long shield walls of the throne guard, blazoned with their house emblems, are an iconic and terrifying sight in Baronic history. The kuirassers of the Baronies decorate their Orchii with house heraldry, war banners, and trophies of past conflicts, each one the avatar resplendent with the regalia of a decorated warrior.",
+            "frame.mf_black_witch_alt_orchidea.flavor.short": "Royal Guard",
+            "gear.cp_helion.name": "Helion",
+            "gear.cp_helion.action_hunting_eagle.name": "Hunting Eagle",
+            "gear.cp_helion.action_hunting_eagle.effect": "1/round when the Orchis causes a character to collide with another obstacle or character, you can - in addition to any other effects - throw your mech's scuta shield at that character, dealing |3 kinetic| damage and rendering them unable to take |reactions| until the end of their next turn. The shield then returns to you. This effect doesn’t take an |action| or |reaction| to activate.",
+            "gear.cp_helion.action_helion.name": "Helion",
+            "gear.cp_helion.action_helion.effect": "You hurl your shield with a mighty throw at a mech (allied or hostile) within |range 6|, making a special |ram| attack that cannot miss and knocks the target 3 spaces back instead of 1. This can cause characters to collide with obstructions as normal. This action is |efficient|, and refunds |1 CP| at the end of any scene in which it’s used.",
+            "gear.mt_perfect_parry.name": "Perfect Parry",
+            "gear.mt_perfect_parry.effect": "The Orchis and all adjacent allied characters have |immunity| to all damage and effects from missed attacks.",
+            "gear.mt_royal_guard.name": "Royal Guard",
+            "gear.mt_royal_guard.effect": "When an allied mech adjacent to the Orchis moves, the Orchis can also move with that character as long as it doesn’t break adjacency, mirroring that character’s movement. The Orchis is still affected by obstructions and, between its turns, can only move a total number of spaces with this ability equal to its |speed| |+ 1|. This effect doesn’t take a |reaction|, and doesn’t provoke |reactions| or obey |engagement|.",
+            "gear.mt_royal_guard.pop": "Remaining Movement: %s"
+        }
+    }
+}

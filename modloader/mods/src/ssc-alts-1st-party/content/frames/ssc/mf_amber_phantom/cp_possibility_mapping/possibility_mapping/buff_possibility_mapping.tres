@@ -1,0 +1,15 @@
+[gd_resource type="Resource" script_class="BuffDamage" load_steps=3 format=3]
+
+[ext_resource type="Script" path="res://engine/character/buff/archtypes/buff_damage.gd" id="1_5xg7c"]
+[ext_resource type="Texture2D" path="res://assets/icons/modded/ssc-alts-1st-party/action_possibility_mapping.png" id="1_6xi1b"]
+
+[resource]
+script = ExtResource("1_5xg7c")
+damage_dice = "1d6"
+until = 9
+to = 8
+is_onetime = true
+multiple_copies_can_stack = true
+icon = ExtResource("1_6xi1b")
+localization_key_override = "cp_possibility_mapping.action_possibility_mapping"
+metadata/_custom_type_script = "uid://cq0gb4by4uruk"

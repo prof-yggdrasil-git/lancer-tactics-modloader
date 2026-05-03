@@ -1,0 +1,14 @@
+[gd_resource type="Resource" script_class="Kit" load_steps=6 format=3]
+
+[ext_resource type="Script" path="res://engine/character/gear_action/action.gd" id="1_w0wbj"]
+[ext_resource type="Script" path="res://engine/character/gear_passive/passive.gd" id="2_5ky4o"]
+[ext_resource type="Resource" path="res://content/gear/mhi/systems/ms_compulsion_induction_suite/action_foolish_urge.tres" id="2_6j7xh"]
+[ext_resource type="Script" path="res://engine/character/gear/kit.gd" id="3_6j7xh"]
+[ext_resource type="Resource" path="res://content/gear/mhi/systems/ms_compulsion_induction_suite/action_sudden_anger.tres" id="3_t88bb"]
+
+[resource]
+script = ExtResource("3_6j7xh")
+actions = Array[ExtResource("1_w0wbj")]([ExtResource("2_6j7xh"), ExtResource("3_t88bb")])
+sp_cost = 2
+system_tags = 1
+metadata/_custom_type_script = "uid://ckrv6mvs5q65e"

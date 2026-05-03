@@ -1,0 +1,22 @@
+[gd_resource type="Resource" script_class="Kit" load_steps=8 format=3]
+
+[ext_resource type="Script" path="res://engine/character/gear_action/action.gd" id="1_cfin4"]
+[ext_resource type="Script" path="res://engine/character/gear_passive/passive.gd" id="2_3j2dx"]
+[ext_resource type="Resource" path="res://content/gear/mhi/systems/ms_ancalagon_nhp/action_ancalagon_nhp.tres" id="2_vvuvj"]
+[ext_resource type="Script" path="res://engine/character/gear/kit.gd" id="3_vvuvj"]
+[ext_resource type="JSON" path="res://content/portraits/default_nhps/ancalagon.json" id="4_1iku7"]
+[ext_resource type="Script" path="res://engine/character/gear_passive/passive_ai_privilege.gd" id="5_diwlq"]
+
+[sub_resource type="Resource" id="Resource_n8g51"]
+script = ExtResource("5_diwlq")
+default_portrait = ExtResource("4_1iku7")
+metadata/_custom_type_script = "uid://blv61i0a1ghms"
+
+[resource]
+script = ExtResource("3_vvuvj")
+actions = Array[ExtResource("1_cfin4")]([ExtResource("2_vvuvj")])
+passives = Array[ExtResource("2_3j2dx")]([SubResource("Resource_n8g51")])
+sp_cost = 3
+system_tags = 13
+charges_max = 1
+metadata/_custom_type_script = "uid://ckrv6mvs5q65e"

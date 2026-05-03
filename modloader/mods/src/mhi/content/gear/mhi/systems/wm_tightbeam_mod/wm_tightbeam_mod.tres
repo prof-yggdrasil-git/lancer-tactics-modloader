@@ -1,0 +1,14 @@
+[gd_resource type="Resource" script_class="Kit" load_steps=6 format=3]
+
+[ext_resource type="Script" path="res://engine/character/gear_action/action.gd" id="1_j7y8g"]
+[ext_resource type="Texture2D" path="res://assets/icons/modded/mhi/wm_tightbeam_mod.png" id="2_hoy1v"]
+[ext_resource type="Script" path="res://engine/character/gear_passive/passive.gd" id="2_rgwrc"]
+[ext_resource type="Script" path="res://engine/character/gear/kit.gd" id="3_hoy1v"]
+[ext_resource type="Resource" path="res://content/gear/mhi/systems/wm_tightbeam_mod/passive_tightbeam_mod.tres" id="3_rgwrc"]
+
+[resource]
+script = ExtResource("3_hoy1v")
+passives = Array[ExtResource("2_rgwrc")]([ExtResource("3_rgwrc")])
+sp_cost = 1
+icon_override = ExtResource("2_hoy1v")
+metadata/_custom_type_script = "uid://ckrv6mvs5q65e"

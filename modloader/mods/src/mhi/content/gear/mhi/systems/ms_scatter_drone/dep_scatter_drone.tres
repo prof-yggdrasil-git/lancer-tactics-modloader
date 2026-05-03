@@ -1,0 +1,24 @@
+[gd_resource type="Resource" script_class="Frame" load_steps=6 format=3]
+
+[ext_resource type="Script" path="res://engine/character/gear/kit.gd" id="1_cq62q"]
+[ext_resource type="Script" path="res://engine/character/unit_core/frame.gd" id="2_tawe2"]
+[ext_resource type="Texture2D" path="res://assets/units/deployable/scatter_drone.png" id="3_s51na"]
+[ext_resource type="Script" path="res://engine/character/unit/statblock.gd" id="4_7mxm3"]
+
+[sub_resource type="Resource" id="Resource_psxmp"]
+script = ExtResource("4_7mxm3")
+size = 1
+is_size_half = true
+structure = 1
+health = 5
+evasion = 10
+edef = 10
+metadata/_custom_type_script = "uid://bxpc46igtsmvw"
+
+[resource]
+script = ExtResource("2_tawe2")
+sprites = Array[Texture2D]([ExtResource("3_s51na")])
+stat = SubResource("Resource_psxmp")
+is_drone = true
+is_deployable = true
+metadata/_custom_type_script = "uid://daycu0mqh1rbq"

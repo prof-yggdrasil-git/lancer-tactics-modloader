@@ -1,0 +1,46 @@
+[gd_resource type="Resource" script_class="Kit" load_steps=18 format=3]
+
+[ext_resource type="Script" path="res://engine/character/gear_action/action.gd" id="1_m3y48"]
+[ext_resource type="Resource" path="res://content/frames/ssc/mf_amber_phantom/cp_possibility_mapping/convergence_point/action_convergence_point.tres" id="2_bmi66"]
+[ext_resource type="Script" path="res://engine/character/gear_passive/passive.gd" id="2_fnmw3"]
+[ext_resource type="Script" path="res://engine/character/gear/kit.gd" id="3_g3nsw"]
+[ext_resource type="Resource" path="res://content/frames/ssc/mf_amber_phantom/cp_possibility_mapping/possibility_mapping/action_possibility_mapping.tres" id="3_oe1dw"]
+[ext_resource type="Script" path="res://engine/character/gear_passive/passive_die_counter.gd" id="4_g3nsw"]
+[ext_resource type="Resource" path="res://content/frames/ssc/mf_amber_phantom/cp_possibility_mapping/convergence_point/action_convergence_point_end_turn.tres" id="4_oe1dw"]
+[ext_resource type="Resource" path="res://content/frames/ssc/mf_amber_phantom/cp_possibility_mapping/action_regain_cp.tres" id="5_iv6kn"]
+[ext_resource type="Script" path="res://engine/character/buff/buff.gd" id="5_kofjh"]
+[ext_resource type="Script" path="res://engine/character/gear_action/resources/on_hit_effect.gd" id="6_n2008"]
+[ext_resource type="Script" path="res://engine/character/gear_passive/passive_buff_applicator.gd" id="7_24nen"]
+[ext_resource type="Script" path="res://engine/character/buff/archtypes/buff_weapon_type_on_hit.gd" id="7_bmi66"]
+[ext_resource type="Resource" path="res://content/frames/ssc/mf_amber_phantom/cp_possibility_mapping/possibility_mapping/onhit_possibility_mapping.tres" id="8_ql6rx"]
+[ext_resource type="Texture2D" path="res://assets/icons/modded/ssc-alts-1st-party/action_possibility_mapping.png" id="10_ql6rx"]
+
+[sub_resource type="Resource" id="Resource_byak5"]
+script = ExtResource("4_g3nsw")
+key = "dc_possibility_mapping"
+starting_value = 0
+max_value = 4
+show_in_tooltips = false
+metadata/_custom_type_script = "uid://5pqtbuyqw6eo"
+
+[sub_resource type="Resource" id="Resource_oe1dw"]
+script = ExtResource("7_bmi66")
+effects = Array[ExtResource("6_n2008")]([ExtResource("8_ql6rx")])
+damage_types = Array[int]([0, 1, 2, 4])
+allow_basic = true
+to = 48
+icon = ExtResource("10_ql6rx")
+localization_key_override = "cp_possibility_mapping.action_possibility_mapping"
+metadata/_custom_type_script = "uid://cuj44q6a8leto"
+
+[sub_resource type="Resource" id="Resource_bmi66"]
+script = ExtResource("7_24nen")
+applied_buffs = Array[ExtResource("5_kofjh")]([SubResource("Resource_oe1dw")])
+metadata/_custom_type_script = "uid://dy4kg537rc55e"
+
+[resource]
+script = ExtResource("3_g3nsw")
+actions = Array[ExtResource("1_m3y48")]([ExtResource("2_bmi66"), ExtResource("3_oe1dw"), ExtResource("4_oe1dw"), ExtResource("5_iv6kn")])
+passives = Array[ExtResource("2_fnmw3")]([SubResource("Resource_byak5"), SubResource("Resource_bmi66")])
+is_trait = true
+metadata/_custom_type_script = "uid://ckrv6mvs5q65e"

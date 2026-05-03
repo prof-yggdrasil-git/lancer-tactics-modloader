@@ -1,0 +1,9 @@
+[gd_resource type="Resource" load_steps=2 format=3]
+
+[ext_resource type="Script" path="res://content/frames/mhi/mf_wyrm/cp_flux_pinned_radiators/action_regain_cp.gd" id="1_oqa6x"]
+
+[resource]
+script = ExtResource("1_oqa6x")
+triggers_on = Array[int]([12])
+consumes_rxn = false
+metadata/_custom_type_script = "uid://dlf85tq8t67ql"

@@ -1,0 +1,17 @@
+[gd_resource type="Resource" load_steps=5 format=3]
+
+[ext_resource type="Script" path="res://engine/character/buff/buff.gd" id="1_joujv"]
+[ext_resource type="Resource" path="res://content/frames/mhi/mf_wyrm/cp_flux_pinned_radiators/buff_overload_coolant_loop.tres" id="2_8w8yl"]
+[ext_resource type="Script" path="res://content/frames/mhi/mf_wyrm/cp_flux_pinned_radiators/action_redline_dispersion.gd" id="3_4j02o"]
+[ext_resource type="Texture2D" path="res://assets/icons/modded/mhi/cp_overload_coolant_loop.png" id="3_lfnch"]
+
+[resource]
+script = ExtResource("3_4j02o")
+buffs = Array[ExtResource("1_joujv")]([ExtResource("2_8w8yl")])
+apply_only_to_self = true
+can_reapply = false
+action_type = 3
+consumes_cp = true
+icon_override = ExtResource("3_lfnch")
+hide_if_disabled = true
+metadata/_custom_type_script = "uid://cm50wdj5g8syg"

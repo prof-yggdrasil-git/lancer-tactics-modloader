@@ -1,0 +1,33 @@
+[gd_resource type="Resource" load_steps=8 format=3]
+
+[ext_resource type="Resource" path="res://content/frames/deployables/dep_debris_cover.tres" id="1_pepu7"]
+[ext_resource type="Texture2D" path="res://assets/icons/cover_hard.svg" id="2_4mrvc"]
+[ext_resource type="Script" path="res://content/frames/ssc/mf_swallowtail_ranger/mt_scout_battlefield/action_deploy_to_all_tiles.gd" id="3_pepu7"]
+[ext_resource type="Script" path="res://engine/character/gear_action/resources/range_pattern.gd" id="4_77j1u"]
+[ext_resource type="Script" path="res://engine/character/gear_action/resources/target_requirements.gd" id="5_66e3a"]
+
+[sub_resource type="Resource" id="Resource_uyguq"]
+script = ExtResource("4_77j1u")
+pattern = 5
+value = 1
+metadata/_custom_type_script = "uid://c0yv6pnw2be6l"
+
+[sub_resource type="Resource" id="Resource_lu1gb"]
+script = ExtResource("5_66e3a")
+range_pattern = SubResource("Resource_uyguq")
+can_target_empty_tiles = true
+can_target_setpieces = true
+can_target_units = false
+requires_free_space = true
+aoe_must_be_free_space = true
+aoe_must_be_entirely_on_map = true
+metadata/_custom_type_script = "uid://df1yicp7kbf3x"
+
+[resource]
+script = ExtResource("3_pepu7")
+deployable_frame = ExtResource("1_pepu7")
+deploy_range = 9999
+needs_los = false
+target_requirements_override = SubResource("Resource_lu1gb")
+icon_override = ExtResource("2_4mrvc")
+metadata/_custom_type_script = "uid://2wdyuf507vdl"

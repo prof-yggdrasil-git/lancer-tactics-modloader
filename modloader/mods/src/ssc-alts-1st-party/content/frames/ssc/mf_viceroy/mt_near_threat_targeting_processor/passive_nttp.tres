@@ -1,0 +1,9 @@
+[gd_resource type="Resource" load_steps=4 format=3]
+
+[ext_resource type="Script" path="res://engine/character/buff/buff.gd" id="1_dj7sl"]
+[ext_resource type="Script" path="res://engine/character/gear_action/resources/on_hit_effect.gd" id="2_fgm7d"]
+[ext_resource type="Script" path="res://content/frames/ssc/mf_viceroy/mt_near_threat_targeting_processor/passive_nttp.gd" id="3_gbv46"]
+
+[resource]
+script = ExtResource("3_gbv46")
+metadata/_custom_type_script = "uid://n33no7rw7y82"

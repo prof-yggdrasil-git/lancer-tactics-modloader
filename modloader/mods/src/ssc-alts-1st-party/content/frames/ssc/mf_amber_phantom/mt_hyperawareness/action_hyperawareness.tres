@@ -1,0 +1,15 @@
+[gd_resource type="Resource" load_steps=6 format=3]
+
+[ext_resource type="Script" path="res://engine/character/buff/buff.gd" id="1_4kfej"]
+[ext_resource type="Resource" path="res://content/frames/ssc/mf_amber_phantom/mt_hyperawareness/buff_hyperawareness_attack.tres" id="2_2so8c"]
+[ext_resource type="Resource" path="res://content/frames/ssc/mf_amber_phantom/mt_hyperawareness/buff_hyperawareness_save.tres" id="3_7jr0c"]
+[ext_resource type="Script" path="res://content/frames/ssc/mf_amber_phantom/mt_hyperawareness/action_hyperawareness.gd" id="4_2so8c"]
+[ext_resource type="Texture2D" path="res://assets/icons/modded/ssc-alts-1st-party/mt_hyperawareness.png" id="4_7jr0c"]
+
+[resource]
+script = ExtResource("4_2so8c")
+buffs = Array[ExtResource("1_4kfej")]([ExtResource("2_2so8c"), ExtResource("3_7jr0c")])
+triggers_on = Array[int]([9])
+consumes_rxn = false
+icon_override = ExtResource("4_7jr0c")
+metadata/_custom_type_script = "uid://cq0fuxx7pf0su"

@@ -1,0 +1,15 @@
+[gd_resource type="Resource" load_steps=7 format=3]
+
+[ext_resource type="Script" path="res://engine/character/gear_action/resources/damage_value.gd" id="1_rgtjq"]
+[ext_resource type="Resource" path="res://content/gear/mhi/systems/ms_compulsion_induction_suite/buff_foolish_urge.tres" id="2_fae77"]
+[ext_resource type="Script" path="res://engine/character/gear_action/resources/on_hit_effect.gd" id="3_fae77"]
+[ext_resource type="Resource" path="res://content/gear/mhi/systems/ms_compulsion_induction_suite/buff_foolish_urge_target.tres" id="3_i11h7"]
+[ext_resource type="Texture2D" path="res://assets/icons/modded/mhi/action_foolish_urge.png" id="4_fae77"]
+[ext_resource type="Script" path="res://content/gear/mhi/systems/ms_compulsion_induction_suite/action_foolish_urge.gd" id="4_rgtjq"]
+
+[resource]
+script = ExtResource("4_rgtjq")
+buff_self = ExtResource("2_fae77")
+buff_target = ExtResource("3_i11h7")
+icon_override = ExtResource("4_fae77")
+metadata/_custom_type_script = "uid://bmkbhm13soupd"

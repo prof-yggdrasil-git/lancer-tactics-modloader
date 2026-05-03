@@ -1,0 +1,40 @@
+[gd_resource type="Resource" script_class="Frame" load_steps=10 format=3]
+
+[ext_resource type="Script" path="res://engine/character/gear/kit.gd" id="1_numh0"]
+[ext_resource type="Script" path="res://engine/character/unit_core/frame.gd" id="2_gd36j"]
+[ext_resource type="Texture2D" path="res://assets/units/pc/ssc_orchis.png" id="3_uubbh"]
+[ext_resource type="Script" path="res://engine/character/unit/statblock.gd" id="4_kuv4v"]
+[ext_resource type="Resource" path="res://content/frames/ssc/mf_orchis/cp_helion/cp_helion.tres" id="5_uubbh"]
+[ext_resource type="Resource" path="res://content/frames/ssc/mf_orchis/mt_perfect_parry/mt_perfect_parry.tres" id="6_v4iea"]
+[ext_resource type="Resource" path="res://content/frames/shared/mt_guardian/mt_guardian.tres" id="7_ofnou"]
+[ext_resource type="Resource" path="res://content/frames/ssc/mf_orchis/mt_royal_guard/mt_royal_guard.tres" id="8_nlo76"]
+
+[sub_resource type="Resource" id="Resource_qos8d"]
+script = ExtResource("4_kuv4v")
+size = 1
+structure = 4
+stress = 4
+health = 8
+armor = 1
+evasion = 10
+edef = 10
+speed = 5
+heat = 6
+save_target = 12
+sensor_range = 10
+tech_attack = -1
+repairs = 4
+systems_points = 8
+reactions = 1
+activations = 1
+metadata/_custom_type_script = "uid://bxpc46igtsmvw"
+
+[resource]
+script = ExtResource("2_gd36j")
+sprites = Array[Texture2D]([ExtResource("3_uubbh")])
+traits = Array[ExtResource("1_numh0")]([ExtResource("5_uubbh"), ExtResource("6_v4iea"), ExtResource("7_ofnou"), ExtResource("8_nlo76")])
+mount_types = Array[int]([3])
+stat = SubResource("Resource_qos8d")
+role_primary = 3
+role_secondary = 2
+metadata/_custom_type_script = "uid://daycu0mqh1rbq"
