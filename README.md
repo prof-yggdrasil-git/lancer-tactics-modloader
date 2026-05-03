@@ -16,7 +16,8 @@ A mod loader for [Lancer Tactics](https://wick.itch.io/lancer-tactics), compatib
 **Due to Godot's removal of the** `--script` **parameter, users on MacOS are currently unable to use the modloader.**
 
 ## Where can I find Mods?
-- Mods made by **GavstarB** (me) can be found [here](https://github.com/GavstarB/lancer-tactics-mods).
+- I went ahead and just dumped the mods into this repo. If this becomes an issue we'll cross that bridge later.
+- Original mods made by **GavstarB** can be found [here](https://github.com/GavstarB/lancer-tactics-mods).
 - Compatible versions for 0.7.1 are available in a [fork](https://github.com/prof-yggdrasil-git/lancer-tactics-mods).
 ## How it works
 - `override.cfg` loads the `modloader/modloader.gd` script and runs it in the game's context. It uses this script to patch the `modloader/modloader.pck` file into the game. It then switches scene to a scene loaded from that file.
